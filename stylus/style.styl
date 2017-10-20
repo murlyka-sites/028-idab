@@ -1,0 +1,830 @@
+@import "inc/fonts"
+@import "inc/variables"
+
+html {
+	// background url(../images/perfect.jpg) center top
+}
+
+.popup-link {
+	color $color-burgundy
+	
+	&:hover,
+	&:focus,
+	&:active {
+		color $color-burgundy
+	}
+}
+
+.container-fluid {
+	max-width 1100px;
+	margin auto
+	
+	&_header {
+		max-width 1300px 
+	}
+}
+
+.ul {
+	padding 0
+	margin 0 0 10px
+	list-style-type none
+	font-size inherit 
+	line-height inherit
+	font-size 16px
+	line-height 28px
+	
+	@media (min-width $sm) {
+		margin-bottom 30px 
+	}
+
+	 
+	&__li {
+		&:before {
+			content "-"
+			margin-right 5px
+		}
+	}
+}
+
+.nav-top {	 
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0
+		text-align left
+		
+		@media (min-width $sm) {
+			display flex
+			justify-content space-around
+		}
+	}
+	
+	&__item {
+		padding 5px 0
+		 
+		@media (min-width $sm) {
+			margin-right 30px
+			padding 0
+		}
+		
+		@media (min-width $lg) {
+			margin-right 15px 
+		}
+		
+		&:last-child {
+			margin-right 0
+		}
+	}
+	
+	&__link {
+		color inherit
+		
+		&:hover,
+		&:focus,
+		&:active {
+			color inherit
+		}
+	}
+}
+
+.contact-top {
+	display flex
+	align-items center
+	font-size 17px
+	
+	&__column {
+		&_icon {
+			margin-right 20px 
+		}
+	}
+}
+
+.nav-contact-top {
+	
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0
+	}
+	
+	&__list {
+		
+	}
+	
+	&__item {
+		margin-bottom 10px 
+		
+		&:last-child {
+			margin-bottom 0
+		}
+	}
+	
+	&__link {
+		color inherit
+		
+		
+		&:hover,
+		&:focus,
+		&:active {
+			color inherit
+		}
+	}
+}
+
+.nav-spand {
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0		
+	}
+	
+	&__item {
+		display flex
+		align-items center
+		margin-bottom 5px 
+	}
+	
+	&__icon {
+		margin-right 12px 
+	}
+}
+
+.button {
+	display inline-block
+	text-decoration none
+	text-align center
+	max-width 100%
+	border none
+	
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration none
+	}
+	
+	&_header {
+		border-radius 26px 0 0 26px
+	}
+	
+	&_size {
+		&_xs {
+			font-size 18px 
+			line-height 1
+			padding 16px 
+		}
+		
+		&_sm {
+			font-size 18px 
+			line-height 1
+			padding 18px 
+		}
+		
+		&_md {
+			font-size 18px 
+			line-height 1
+			padding 23px
+		}
+		
+		&_lg {
+			font-size 18px 
+			line-height 1
+			padding 28px
+		}
+	}
+	
+	&_theme {
+		&_white-border {
+			border 1px solid white
+			background transparent 
+			color white
+			
+			&:hover,
+			&:active,
+			&:focus {
+				text-decoration none
+				background white
+				color $color-signal-black
+			}
+		}
+		
+		&_signal-black {
+			background $color-signal-black 
+			color white
+			
+			&:hover,
+			&:active,
+			&:focus {
+				text-decoration none
+				background lighten($color-signal-black, 15%)
+				color white
+			}
+		}
+		
+		&_burgundy {
+			color white
+			background $color-burgundy
+			text-transform uppercase
+			box-shadow 0 11px 28px 5px rgba(43, 43, 43, 0.23)
+			
+			&:hover,
+			&:active,
+			&:focus {
+				color white
+				background lighten($color-burgundy, 15%)
+			}
+		}
+		
+		&_burgundy-bordered {
+			color $color-burgundy
+			border 1px solid $color-burgundy
+			text-transform uppercase
+			box-shadow 0 11px 28px 5px rgba(43, 43, 43, 0.23)
+			
+			&:hover,
+			&:active,
+			&:focus {
+				color white
+				background lighten($color-burgundy, 15%)
+				
+			}
+		}
+	}
+}
+
+.svg {
+	fill currentColor
+}
+
+.h1 {
+	margin 0
+	font-size 30px
+	line-height 1.35 
+	
+	@media (min-width $sm) {
+		font-size 54px
+	}
+}
+
+.h2  {
+	margin 0
+	font-size 25px
+	line-height 1
+	
+	@media (min-width $sm) {
+		font-size 40px 
+	}
+	
+	&_border {
+		&_left,
+		&_right {
+			position relative
+			padding-bottom 10px 
+			
+			@media (min-width $sm) {
+				padding-bottom 25px 
+			}
+			
+			&:before {
+				content ""
+				position absolute
+				bottom 0
+				display block
+				height 2px
+				width 140px
+				
+				background $color-burgundy
+				
+				@media (min-width $lg) {
+					width 100%
+					width "calc( ((100% - 1320px) / 2) + 125px )" % ()
+				}
+			}
+		}
+		
+		&_left {
+			text-align left
+			
+			&:before {
+				left 0
+			} 
+		}
+		
+		&_right {
+			text-align right
+			
+			&:before {
+				right 0
+			}
+		}
+	} 
+}
+
+.p {
+	margin-bottom 10px 
+	font-size 16px 
+	line-height 28px 
+	
+	@media (min-width $sm) {
+		margin 0 0 30px 
+	}
+}
+
+.text {
+	&_color {
+		&_burgundy {
+			color $color-burgundy
+		}
+	}
+}
+
+.bg1 {
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	overflow hidden
+	background $color-signal-black
+	
+	&__photo {
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		width 1920px
+		height 1000px
+		background url(../images/bg-main-photo.jpg) center left
+		clip-path polygon(0 285px, 165px 0, 465px 0, 0 800px,
+							0 880px, 505px 0, 805px 0, 230px 1000px, 0 1000px,
+							275px 1000px, 845px 0, 1145px 0, 575px 1000px, 0 1000px);
+		// clip-path polygon(0 28.5%, 8.59375% 0, 46.5% 0, 0 80.0%)
+	}
+}
+.bg-detail {
+	
+	@media (min-width $sm) {
+		background url(../images/bg-detail.jpg) bottom center no-repeat
+	}
+	
+	@media (min-width 1920px) {
+		background-position bottom right
+	}
+}
+
+
+
+
+.inline-flex {
+	display table
+	width 100%
+	
+	&__icon {
+		display table-cell
+		vertical-align middle
+		padding-right 10px 
+	}
+	
+	&__text {
+		display table-cell		
+		vertical-align middle
+	}
+}
+
+.video-wrap {
+	position relative
+	padding-top 25px 
+	padding-bottom 56.25%
+	height 0
+	
+	&__container {
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background $color-signal-black 
+	}
+}
+
+.slider-exp,
+.slider-video {
+	position relative
+	
+	&__container {
+		
+	}
+	
+	&__arrows {
+		position absolute
+		right 0
+		bottom 0
+		width 83px 
+		height 50px 
+	}
+
+	&__arrow {
+		position absolute
+		background transparent
+		border none 
+		padding 0
+		stroke $color-signal-black
+		line-height 0
+		
+		&.slick-disabled {
+			stroke #a6a9ab
+			cursor default
+		}
+		
+		&_prev {
+			top 15px
+			left 0
+		}
+		
+		&-separator {
+			position absolute
+			top 0
+			left 30px  
+			color #a6a9ab
+		}
+		
+		&_next {
+			top 27px
+			right 0
+		}
+	}
+	
+	&__separator {
+		
+	}
+}
+
+.slider-exp {
+	&__arrows {
+		top -50px
+		left 0
+		z-index 5
+	}	
+}
+
+.popup-order {
+	max-width 536px 
+	padding 30px 14px 14px
+	margin 0
+	background #FFF
+	text-align center
+	color $color-signal-black
+	
+	@media (min-width $xs) {
+		padding 45px 84px 60px
+	}
+	
+	&__title {
+		margin-bottom 10px 
+		font-size 18px 
+		font-weight 700 
+		
+		@media (min-width $xs) {
+			margin-bottom 25px 
+		}
+	}
+	
+	&__slogan {}
+	
+	&__group {
+		margin-bottom 15px 
+		
+		@media (min-width $xs) {
+			margin-bottom 35px
+		}
+	}
+	
+	&__button {
+		margin-top 25px 
+		
+		@media (min-width $xs) {
+			margin-top 50px
+		}
+	}
+}
+
+.popup-about {
+	padding 0
+	margin 0
+	width 1152px 
+	max-width 100% 
+}
+
+.popup-teacher {
+	padding 0
+	margin 0
+	width 1152px 
+	max-width 100%
+	
+	&__container {
+		height 100%
+		
+		@media (min-width $sm) {
+			display flex
+		}
+	}
+	
+	&__column {		
+		@media (min-width $sm) {
+			height 100%
+		}
+
+		&_pr {
+			
+		}
+		
+		&_desc {
+			padding 60px 25px
+			
+			@media (min-width $sm) {
+				overflow auto
+				height 400px
+			}
+		}
+	}
+	
+	&__pr {
+		width 100%
+		height auto
+		
+		@media (min-width $sm) {
+			width 300px
+		}
+		
+		@media (min-width $md) {
+			width 450px
+			height 100%
+		}
+	}
+	
+	&__title {
+		margin-bottom 20px 
+		font-size 36px 
+		font-weight 700 
+	}
+	
+	&__slogan {
+		margin-bottom 30px 
+		font-size 15px
+		line-height 25px
+		color #94979f 
+	}
+}
+
+.popup-course {
+	width 1152px 
+	max-width 100%
+	height 100%
+	padding 0
+	margin 0
+	
+	&__container {
+		height 100%
+		
+		@media (min-width $sm) {
+			display flex
+		}
+	}
+	
+	&__column {
+		height 100%
+		
+		&_pr {
+			height auto
+			flex none
+			
+			@media (min-width $xs) {
+				display flex
+				height 300px
+			}
+			
+			@media (min-width $sm) {
+				display block
+				width 400px 
+				height 100%
+			}
+		}
+		
+		&_desc {
+			@media (min-width $sm) {
+				flex auto
+				overflow auto
+			}
+		}
+	}
+	
+	&__cell {
+		@media (min-width $xs) {
+			width 50%
+		}
+				
+		@media (min-width $sm) {
+			height 50%
+			width 100%
+		}
+		
+		&_name {
+			display flex
+			align-items center
+			justify-content center
+			flex-direction column
+			background $color-signal-black 
+			padding 30px 10px
+			
+			@media (min-width $xs) {
+				padding 0
+			}
+		}
+	}
+	
+	&__mba {
+		color #a1384f
+		font-size 50px
+		font-weight 700 
+				
+		@media (min-height 700px) {
+			font-size 72px
+		}
+	}
+	
+	&__name {
+		color white
+		font-size 30px
+		font-weight 700 
+		text-align center
+		
+		@media (min-height 700px) {
+			font-size 36px
+		}
+	}
+	
+	&__pr {
+		width 100%
+		height auto
+		object-fit cover
+		
+		@media (min-width $xs) {
+			height 100%
+		}
+	}
+	
+	&__inner {
+		padding 50px 30px
+	}
+	
+	&__title {
+		margin 0 0 15px 
+		font-size 24px 
+		font-weight 700
+		
+		@media (min-width $sm) {
+			margin 0 0 30px 
+			font-size 36px
+		}
+	}
+	
+	&__slogan {
+		margin-bottom 15px 
+		color #94979f
+		font-size 15px 
+		line-height 15px 
+		
+		@media (min-width $sm) {
+			margin-bottom 35px 
+		}
+	}
+	
+	&__button {
+		margin 5px 
+		@media (max-width 767px) {
+			font-size 14px 
+		}
+	}
+}
+
+.popup-menu {
+	text-align center
+	padding 14px 
+	width 100%
+	height 100%
+	margin 0
+	
+	&__row {
+		&_button {
+			text-align right
+		}
+	}
+}
+
+.popup-exp,
+.popup-teacher {
+	
+}
+
+.slider-video {
+	padding-bottom 60px 
+	
+	&__slide {
+		padding 0 15px 
+	}
+}
+
+.card-video {
+	&__pr {
+		width 100%
+		height auto
+	}
+}
+
+.group-field {
+	position relative
+	
+	&__icon {
+		position absolute
+		top 0
+		left 0 
+		width 32px
+		height 35px
+		text-align center
+		display flex
+		align-items center
+		justify-content center
+	}
+	
+	&__input {
+		display block
+		height 35px
+		padding-left 45px
+		width 100%
+		border none
+		border-bottom 1px solid #aeb1b3
+		color #aeb1b3
+		font-size 16px 
+		
+		&:focus {
+			outline none
+			border-color $color-burgundy
+		}
+	}
+}
+
+::-webkit-scrollbar  {
+	width 4px 
+	height 4px
+	padding 3px 
+	background transparent
+}
+//{
+// 	// &:vertical {
+// 		width 12px 
+// 	// }
+
+// 	&:horizontal {
+// 		height 12px
+// 		padding 3px
+// 	}
+// }
+
+::-webkit-scrollbar-track {
+	box-shadow inset 0 1px 2px rgba(0, 0, 0, 0.1)
+	border-radius 6px
+	background-color #d6dfe4
+	width 2px
+	height 2px
+}
+
+::-webkit-scrollbar-thumb  {
+	background #a1384f
+	width 4px 
+	border-radius 6px
+	// border 3px solid transparent
+	background-clip padding-box
+	width 6px
+	height 6px
+
+	&:window-inactive {
+		display none
+		opacity .5
+	}
+}
+
+// .square {
+// 	position relative
+// 	padding-bottom 50% 
+	
+// 	&__inner {
+// 		position absolute
+// 		top 0
+// 		left 0
+// 		width 100%
+// 		height 100%
+// 	}
+// }
+
+@import "inc/card"
+@import "inc/nav"
+@import "inc/section"

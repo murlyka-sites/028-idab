@@ -1,0 +1,54 @@
+header.section-header
+	.container-fluid.container-fluid_header: .section-header__container
+		.section-header__column.section-header__column_logo
+			img.section-header__logo(src="images/logo.jpg", alt="Логотип" width="163" height="64")
+		.section-header__column.section-header__column_nav
+			nav.nav-top.section-header__nav.visible-lg
+				ul.nav-top__list
+					li.nav-top__item: a.nav-top__link(href="#section-about") О нас
+					li.nav-top__item: a.nav-top__link(href="#section-course") курсы
+					li.nav-top__item: a.nav-top__link(href="#section-reviews") Отзывы
+					li.nav-top__item: a.nav-top__link(href="#section-teacher") преподаватели
+					li.nav-top__item: a.nav-top__link(href="#section-order") ПОдать заявку
+		.hidden-xs.section-header__column.section-header__column_contact
+			.contact-top
+				.contact-top__column.contact-top__column_icon
+					svg.svg(width="21" height="21"): use(xlink:href="images/sprite.svg#phone")
+				.contact-top__column.contact-top__column_nav.nav-contact-top
+					ul.nav-contact-top__list
+						li.nav-contact-top__item: .nav-contact-top__link (495) 376-42-33
+						li.nav-contact-top__item: .nav-contact-top__link (495) 660-93-54;
+		.hidden-xs.section-header__column.section-header__column_button
+			a.button.button_theme_signal-black.button_size_sm.button_header(href="#order" data-fancybox) Перезвоните мне
+		.section-header__column.section-header__column_burger.visible-xs
+			a.section-header__burger(href="#menu" data-fancybox): svg.svg.block(width="30" height="30"): use(xlink:href="images/sprite.svg#menu")
+	.container
+		nav.nav-top.section-header__nav.hidden-lg.hidden-xs
+			ul.nav-top__list
+				li.nav-top__item: a.nav-top__link(href="#section-about") О нас
+				li.nav-top__item: a.nav-top__link(href="#section-course") курсы
+				li.nav-top__item: a.nav-top__link(href="#section-reviews") Отзывы
+				li.nav-top__item: a.nav-top__link(href="#section-teacher") преподаватели
+				li.nav-top__item: a.nav-top__link(href="#section-order") ПОдать заявку
+.hidden
+	#menu.popup-menu
+		//- .popup-menu__row.popup-menu__row_logo
+			img.popup-menu__logo(src="images/logo.jpg", alt="Логотип" width="163" height="64")
+		.popup-menu__row.popup-menu__row_nav
+			nav.nav-top.section-header__nav.hidden-lg
+				ul.nav-top__list
+					li.nav-top__item: a.nav-top__link(href="#section-about" data-fancybox-close) О нас
+					li.nav-top__item: a.nav-top__link(href="#section-course" data-fancybox-close) курсы
+					li.nav-top__item: a.nav-top__link(href="#section-reviews" data-fancybox-close) Отзывы
+					li.nav-top__item: a.nav-top__link(href="#section-teacher" data-fancybox-close) преподаватели
+					li.nav-top__item: a.nav-top__link(href="#section-order" data-fancybox-close) ПОдать заявку
+		//- .popup-menu__row.popup-menu__row_contact
+			.contact-top
+				.contact-top__column.contact-top__column_icon
+					svg.svg(width="21" height="21"): use(xlink:href="images/sprite.svg#phone")
+				.contact-top__column.contact-top__column_nav.nav-contact-top
+					ul.nav-contact-top__list
+						li.nav-contact-top__item: a.nav-contact-top__link(href="#") (495) 376-42-33
+						li.nav-contact-top__item: a.nav-contact-top__link(href="#") (495) 660-93-54;
+		//- .popup-menu__row.popup-menu__row_button
+			a.button.button_theme_signal-black.button_size_sm.button_header(href="#") Перезвоните мне

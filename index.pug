@@ -1,0 +1,607 @@
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/header
+		section.section-main
+			.container-fluid: .row: .col-xs-12.col-md-6.col-md-offset-6: .section-main__container
+				h1.h1.section-main__title Выйди на новый уровень – 
+					b.text_color_burgundy получи MBA
+					|  от ИДАБ ГУУ
+				p.p.section-main__slogan Учись у практиков, вкладывай в будущую карьеру и расширяй кругозор в Институте делового администрирования и бизнеса
+				a.section-main__button.button.button_size_lg.button_theme_burgundy(href="#order" data-fancybox) Хочу учиться
+		section.section-history#section-about
+			h2.h2.h2_border_left.section-history__title
+				.container-fluid История ИДАБ
+			.container-fluid: .row
+				.col-xs-12.col-md-6.col-md-offset-1.col-md-push-5
+					.video-wrap: video.video-wrap__container(controls)
+						source(src="video/video.webm" type="video/webm")
+						source(src="video/video.ogv" type='video/ogg; codecs="theora, vorbis"')
+						source(src="video/video.mp4" type="video/mp4")
+						p is not visible, most likely your browser does not support HTML5 video
+				.col-xs-12.col-md-5.col-md-pull-7
+					.section-history__desc
+						p.p За 15 лет ИДАБ стал современной и самостоятельной бизнес-школой для подготовки лидеров, способных решать проблемы 21 века. Наш опыт и результаты работы высоко оценены российским и международным бизнесами, а также международным профессиональным сообществом. ИДАБ уверенно занимает лидирующие позиции в независимых рейтингах бизнес-школ России.
+						a.section-history__button.button.button_theme_burgundy.button_size_lg(href="#about" data-fancybox) Узнать больше
+		section.section-course#section-course
+			h2.h2.h2_border_right.section-course__title
+				.container-fluid Наши программы
+			.container-fluid
+				.section-course__card.card-course
+					.card-course__column.card-course__column_header
+						.card-course__title МВА – Финансы
+						p.p.card-course__slogan
+							| Мастер делового администрирования
+							| Master of Buisness Administration
+						.card-course__spand.nav-spand
+							ul.nav-spand__list
+								li.nav-spand__item
+									.nav-spand__icon: svg.svg(width="25" height="25"): use(xlink:href="images/sprite.svg#clock")
+									.nav-spand__title 3 месяца обучения
+
+								li.nav-spand__item
+									.nav-spand__icon: svg.svg(width="25" height="28"): use(xlink:href="images/sprite.svg#money")
+									.nav-spand__title 2000 руб/месяц
+					.card-course__column.card-course__column_desc
+						.card-course__side.card-course__side_desc: p.p.card-course__desc Программа МВА в ИДАБ — это качественное управленческое образование, которое является гарантом вашей личной конкурентоспособности как менеджера, а также конкурентоспособности вашей компании. Искусство управления на программе МВА опирается на глубокое понимание законов и практики современного бизнеса.
+						.card-course__side.card-course__side_button
+							a.card-course__button.button.button_theme_burgundy.button_size_md(href="#course-1" data-fancybox) Подробнее
+
+				.section-course__card.card-course
+					.card-course__column.card-course__column_header
+						.card-course__title МВА – Банковский менеджмент
+						p.p.card-course__slogan
+							| Профессиональная переподготовка
+							br
+							| Professional courses
+						.card-course__spand.nav-spand
+							ul.nav-spand__list
+								li.nav-spand__item
+									.nav-spand__icon: svg.svg(width="25" height="25"): use(xlink:href="images/sprite.svg#clock")
+									.nav-spand__title 3 месяца обучения
+
+								li.nav-spand__item
+									.nav-spand__icon: svg.svg(width="25" height="28"): use(xlink:href="images/sprite.svg#money")
+									.nav-spand__title 2000 руб/месяц
+					.card-course__column.card-course__column_desc
+						.card-course__side.card-course__side_desc: p.p.card-course__desc Программа МВА в ИДАБ — это качественное управленческое образование, которое является гарантом вашей личной конкурентоспособности как менеджера, а также конкурентоспособности вашей компании. Искусство управления на программе МВА опирается на глубокое понимание законов и практики современного бизнеса.
+						.card-course__side.card-course__side_button
+							a.card-course__button.button.button_theme_burgundy.button_size_md(href="#course-2" data-fancybox) Подробнее
+
+				.section-course__card.card-course
+					.card-course__column.card-course__column_header
+						.card-course__title МВА – Управление стоимостью бизнеса
+						p.p.card-course__slogan
+							| Профессиональная переподготовка
+							br
+							| Professional courses
+						.card-course__spand.nav-spand
+							ul.nav-spand__list
+								li.nav-spand__item
+									.nav-spand__icon: svg.svg(width="25" height="25"): use(xlink:href="images/sprite.svg#clock")
+									.nav-spand__title 3 месяца обучения
+
+								li.nav-spand__item
+									.nav-spand__icon: svg.svg(width="25" height="28"): use(xlink:href="images/sprite.svg#money")
+									.nav-spand__title 2000 руб/месяц
+					.card-course__column.card-course__column_desc
+						.card-course__side.card-course__side_desc: p.p.card-course__desc Программа МВА в ИДАБ — это качественное управленческое образование, которое является гарантом вашей личной конкурентоспособности как менеджера, а также конкурентоспособности вашей компании. Искусство управления на программе МВА опирается на глубокое понимание законов и практики современного бизнеса.
+						.card-course__side.card-course__side_button
+							a.card-course__button.button.button_theme_burgundy.button_size_md(href="#course-3" data-fancybox) Подробнее
+
+				.section-course__card.card-course
+					.card-course__column.card-course__column_header
+						.card-course__title МВА – Управление продажами
+						p.p.card-course__slogan
+							| Профессиональная переподготовка
+							br
+							| Professional courses
+						.card-course__spand.nav-spand
+							ul.nav-spand__list
+								li.nav-spand__item
+									.nav-spand__icon: svg.svg(width="25" height="25"): use(xlink:href="images/sprite.svg#clock")
+									.nav-spand__title 3 месяца обучения
+
+								li.nav-spand__item
+									.nav-spand__icon: svg.svg(width="25" height="28"): use(xlink:href="images/sprite.svg#money")
+									.nav-spand__title 2000 руб/месяц
+					.card-course__column.card-course__column_desc
+						.card-course__side.card-course__side_desc: p.p.card-course__desc Программа МВА в ИДАБ — это качественное управленческое образование, которое является гарантом вашей личной конкурентоспособности как менеджера, а также конкурентоспособности вашей компании. Искусство управления на программе МВА опирается на глубокое понимание законов и практики современного бизнеса.
+						.card-course__side.card-course__side_button
+							a.card-course__button.button.button_theme_burgundy.button_size_md(href="#course-4" data-fancybox) Подробнее
+
+				//- .section-course__card.card-course
+					.card-course__column.card-course__column_header
+						.card-course__title MBA
+						p.p.card-course__slogan
+							| Мастер делового администрирования
+							br
+							| Master of Business Administration
+						.card-course__spand.nav-spand
+							ul.nav-spand__list
+								li.nav-spand__item
+									.nav-spand__icon: svg.svg(width="25" height="25"): use(xlink:href="images/sprite.svg#clock")
+									.nav-spand__title 3 месяца обучения
+
+								li.nav-spand__item
+									.nav-spand__icon: svg.svg(width="25" height="28"): use(xlink:href="images/sprite.svg#money")
+									.nav-spand__title 2000 руб/месяц
+					.card-course__column.card-course__column_desc
+						.card-course__side.card-course__side_desc: p.p.card-course__desc Программа МВА в ИДАБ — это качественное управленческое образование, которое является гарантом вашей личной конкурентоспособности как менеджера, а также конкурентоспособности вашей компании. Искусство управления на программе МВА опирается на глубокое понимание законов и практики современного бизнеса.
+						.card-course__side.card-course__side_button
+							a.card-course__button.button.button_theme_burgundy.button_size_md(href="#course-5" data-fancybox) Подробнее
+				a.section-course__button.button.button_theme_burgundy-bordered.button_size_lg(href="#order" data-fancybox) Мне нужна консультация
+		.bg-detail
+			section.section-detail
+				h2.h2.h2_border_right.section-detail__title 
+					.container-fluid Детали обучения
+				.container-fluid: .section-detail__container
+					.section-detail__column.section-detail__column_pr
+						img.section-detail__pr(src="images/detail.jpg", alt="" width="647" height="618")
+					.section-detail__column.section-detail__column_desc
+						.section-detail__h3 Начало обучения
+						.section-detail__group
+							.inline-flex
+								.inline-flex__icon: svg(width="18" height="22"): use(xlink:href="images/sprite.svg#flag")
+								.inline-flex__text 
+									b Выходного дня:
+									|  24 ноября 2017 г.
+							br
+							.inline-flex
+								.inline-flex__icon: svg(width="18" height="22"): use(xlink:href="images/sprite.svg#flag")
+								.inline-flex__text
+									b Модульная:
+									|  20 ноября 2017 г.
+						.section-detail__h3 Регламент обучения:
+						p.p.section-detail__group
+							b Выходного дня:
+							|  пятница, суббота, воскресенье 1 или 2 раза в месяц
+							br
+							b Модульная:
+							|  7 модулей по 2 недели
+						p.p.sectino-detail__group
+							b Форма обучения:
+							|  Очно-заочная (выходного дня, модульная)
+						p.p.sectino-detail__group
+							.inline-flex
+								.inline-flex__icon: svg(width="20" height="20"): use(xlink:href="images/sprite.svg#clock")
+								.inline-flex__text
+									b Объем программы:
+									|  1900 академических часов, в т.ч. 100 ч. — иностранный язык
+							br
+							.inline-flex
+								.inline-flex__icon: svg(width="19" height="24"): use(xlink:href="images/sprite.svg#money")
+								.inline-flex__text
+									b Стоимость обучения:
+									|  600 000 рублей, действует гибкая система скидок
+				section.section-what
+				h2.h2.h2_border_left.section-what__title 
+					.container-fluid Почему мы?
+				.container-fluid
+					.row
+						.col-xs-12.col-sm-6.col-lg-4
+							.section-what__card.card-what
+								.card-what__column.card-what__column_pr
+									.card-what__pr: svg.svg(width="53" height="50"): use(xlink:href="images/sprite.svg#what-1")
+								.card-what__column.card-what__column_desc
+									.card-what__number 1
+									p.p.card-what__desc Команда преподавателей-практиков, имеющих уникальный для России и мира опыт
+						.col-xs-12.col-sm-6.col-lg-4.col-lg-offset-1
+							.section-what__card.card-what
+								.card-what__column.card-what__column_pr
+									.card-what__pr: svg.svg(width="50" height="50"): use(xlink:href="images/sprite.svg#what-2")
+								.card-what__column.card-what__column_desc
+									.card-what__number 2
+									p.p.card-what__desc Международная стажировка в лучших компаниях экономического сектора
+					.row
+						.col-xs-12.col-sm-6.col-lg-4
+							.section-what__card.card-what
+								.card-what__column.card-what__column_pr
+									.card-what__pr: svg.svg(width="39" height="52"): use(xlink:href="images/sprite.svg#what-3")
+								.card-what__column.card-what__column_desc
+									.card-what__number 3
+									p.p.card-what__desc Cертификат и диплом IFA, свидетельствующий о полученной категории
+						.col-xs-12.col-sm-6.col-lg-4.col-lg-offset-1
+							.section-what__card.card-what
+								.card-what__column.card-what__column_pr
+									.card-what__pr: svg.svg(width="51" height="51"): use(xlink:href="images/sprite.svg#what-4")
+								.card-what__column.card-what__column_desc
+									.card-what__number 4
+									p.p.card-what__desc ИДАБ занимает 2 место в 2016 году в народном рейтинге российских бизнес школ, согласно «РБК+»
+					.row
+						.col-xs-12.col-sm-6.col-lg-4
+							.section-what__card.card-what
+								.card-what__column.card-what__column_pr
+									.card-what__pr: svg.svg(width="38" height="52"): use(xlink:href="images/sprite.svg#what-5")
+								.card-what__column.card-what__column_desc
+									.card-what__number 5
+									p.p.card-what__desc Выгодное соотношение цены и качества — развивайтесь доступно
+						.col-xs-12.col-sm-6.col-lg-4.col-lg-offset-1
+							a.section-what__button.button.button_theme_burgundy.button_size_lg(href="#order" data-fancybox) Записаться на курс
+		section.section-numbers: .container-fluid: .row
+			.col-xs-12.col-sm-6.col-md-3
+				.section-numbers__card.card-numbers
+					.card-numbers__icon: svg.svg(width="88" height="101"): use(xlink:href="images/sprite.svg#numbers-1")
+					.card-numbers__desc лет существования ИДБА
+			.col-xs-12.col-sm-6.col-md-3
+				.section-numbers__card.card-numbers
+					.card-numbers__icon: svg.svg(width="61" height="101"): use(xlink:href="images/sprite.svg#numbers-2")
+					.card-numbers__desc тысяч выпускников Института
+			.col-xs-12.col-sm-6.col-md-3
+				.section-numbers__card.card-numbers
+					.card-numbers__icon: svg.svg(width="92" height="101"): use(xlink:href="images/sprite.svg#numbers-3")
+					.card-numbers__desc регионов России — дома студентов 
+			.col-xs-12.col-sm-6.col-md-3
+				.section-numbers__card.card-numbers
+					.card-numbers__icon: svg.svg(width="101" height="101"): use(xlink:href="images/sprite.svg#numbers-4")
+					.card-numbers__desc отраслей  национальной экономики покорили выпускники
+		section.section-exp#section-reviews
+			h2.h2.h2_border_right.section-exp__title
+				.container-fluid Опыт слушателей
+			.container-fluid: .slider-exp
+				-
+					var i = 0,
+							exps = [{
+								i: ++i,
+								title: 'Борис Калатин',
+								slogan: 'Генеральный директор Благотворительного фонда «Почет» (корпоративный фонд ОАО «РЖД»)',
+								special: 'Работая в холдинге РЖД слышал исключительно положительные отзывы специалистов о качестве подготовки в ИДАБ.',
+								desc: '«Я являюсь выпускником ИДАБ уже 10 лет. Знания и навыки, полученные мной вначале на Президентской программе, а затем на курсе МВА, очень помогли мне состояться профессионально, занимать руководящие посты и принимать решения, правильность которых была проверена временем. Благодаря хорошо составленным программам обучения, опытным преподавателям и умелому руководству ИДАБ в лице А.Л. Денисовой крупнейшие компании России, в том числе ОАО «РЖД», направляли своих сотрудников для обучения.»'
+							},
+							{
+								i: ++i,
+								title: 'Алексей Морозов',
+								slogan: 'Директор Департамента спорта высших достижений, Министерство спорта Российской Федерации:',
+								special: 'Здесь я получил навыки и знания позволяющее эффективно решать поставленные передо мной задачи.',
+								desc: '«Выбирая именно Институт делового администрирования и бизнеса, я выбирал хорошую команду профессионалов, которые честно хотят что-то сделать лучше. Проходя свое обучение, я ни разу не усомнился в правильности выбора. Более того, я развил свои лидерские компетенции и во многом благодаря лично Анне Леонидовне Денисовой, которая на протяжении всего времени обучения помогала мне и моим сокурсникам знаниями и опытом. Я благодарен команде преподавателей-практиков ИДАБ, это не случайные люди, это коллектив, который заинтересован в развитии каждого ученика, и возможно кто-то из нас, тоже сделает что-то лучшее для нашей страны».'
+							},
+							{
+								i: ++i,
+								title: 'Андрей Иванов',
+								special: 'В результате практической работы на кейсах формируются команды единомышленников, из академических ситуаций рождаются новые проекты.',
+								slogan: 'помощник депутата Государственной Думы РФ Ямало-Ненецкого АО, ЕР, Комитет по рег. политике и проблемам Севера и Дальнего Востока, Член Ассоциации полярников, менеджер работы Секции природопользования и экологической безопасности Совета по Арктике и Антарктике при Совете Федерации, член Межведомственного центра компетенций РГУ нефти и газа. Выпускник ИДАБ, разработчик курса «Investor Relations: повышение капитализации компаний» программ MBA ИДАБ:',
+								desc: '«Программы ИДАБ выделяются среди программ других бизнес-школ своей сбалансированностью. В них равное внимание уделено как прикладным финансовым предметам, так и стратегии управления бизнесом и блоку вопросов личностного развития и взаимодействия с людьми. Слушатели получают ответы на вопросы "что делать?" и "как делать?".»'
+							},
+							{
+								i: ++i,
+								title: 'Александр Кононов',
+								special: 'Атмосфера ИДАБ - редкостна по сочетанию креатива, профессионализма, энергетики и доброжелательности.',
+								slogan: 'Директор Департамента корпоративного бизнеса АО Банк "МФК"',
+								desc: '«Как и многим из моих коллег по цеху, мне бизнес-школа дала не только знания и развитие бизнес-компетенций, но и возможность попадания в уникальную бизнес-среду. Я активно участвовал в жизни института во время обучения, участвую и по сей день. Не за деньги и блага, а потому что хочется сохранить эту атмосферу. Победа и призовые места в конкурсе бизнес-кейсов при Американской Торгово-промышленной палате среди ведущих бизнес-школ страны - безусловное признание качества обучения. Рейтинги и международные программы, уникальные преподаватели и спикеры, круглые столы и конференции - вот бизнес-среда ИДАБ. Денисова Анна Леонидовна - бесспорный мотор и душа института.»'
+							},
+							{
+								i: ++i,
+								title: 'Вадим Ремизов',
+								special: 'Бизнес-образование, которое дал мне ИДАБ, это продолжение моего успеха.',
+								slogan: 'Председатель Правления банка «СКИБ», г. Москва',
+								desc: '«Мой выбор Института Делового Администрирования и Бизнеса как места получения бизнес-образования определил системный подход к решению вопросов как по бизнес-направлениям, так и в сфере личных финансов. Перед поступлением в ИДАБ я проанализировал программы MBA, которые предлагали основные бизнес-школы в России. ИДАБ стабильно входил в ТОП бизнес-школ на протяжении ряда лет, давая своим выпускникам уникальную возможность карьерного роста. В процессе обучения основной акцент делался на получение актуальных и востребованных знаний от практиков бизнеса, что позволяло сразу же применять их в работе. К примеру, подход к управлению человеческими ресурсами в целом, инструменты подбора персонала в частности, которым научили меня в ИДАБ, доказывают свою эффективность на практике каждый день. Значительная часть учебного процесса отводилась личностному росту, развитию эмоционального интеллекта, коммуникаций и лидерских качеств.»'
+							},
+							{
+								i: ++i,
+								title: 'Ратмир Мавлиев',
+								special: 'Полученные мной знания и навыки помогли мне повысить мои профессиональные компетенции и продвинуться по карьерной лестнице.',
+								slogan: 'Советник Главы Альметьевского муниципального района по инвестиционному развитию, г. Альметьевск, Республика Татарстан',
+								desc: '«Именно в ИДАБ я осознал, как важно разбираться не только в тонкостях формирования денежных потоков, но и в том какую роль при этом оказывают выстроенные коммуникаций, умение себя преподнести, способность договориться. Здесь было сформировано мое стратегическое видение на функционирование бизнеса в экономике страны. Я благодарен за это преподавателям-практикам и руководству ИДАБ в лице А.Л. Денисовой. Я всегда рекомендую ИДАБ своим коллегам и нашему региональному бизнес-сообществу как достойную бизнес-школу, уверенно занимающую высокие места в рейтинге бизнес-школ России.»'
+							},
+							{
+								i: ++i,
+								title: 'Алексей Печурин',
+								special: 'я обзавелся новыми контактами, контактами, которые позволяют мне успешно трудиться на моей новой должности.',
+								slogan: 'и.о. заместителя генерального директора по экономике и финансам «Вагонная ремонтная компания – 1»',
+								desc: '«Я закончил МВА-Финансы в 2015 году. Почему я выбрал МВА? У меня были определенные знания, но мне нужно было их обратить в некую оболочку, структурировать, систематизировать, а также получить новые навыки и новые знания. Выбирая между различными школами, я выбрал Институт делового администрирования и бизнеса, потому что многие руководители нашей компании, топ-менеджеры холдинга, в котором я работаю, учились именно в ИДАБ. Кроме того, общаясь с ними, я слышал много положительных отзывов о преподавательском составе, о программах обучения, подходе к каждому обучающемуся. Выбрав ИДАБ и закончив программу МВА, я не пожалел, потому что за время обучения, помимо плановых знаний, которые я хотел получить, я познал этику делового общения, было множество практических семинаров с преподавателями-практиками, которые делились своим опытом и этот опыт сегодня помогает мне в работе.»'
+							},
+							{
+								i: ++i,
+								title: 'Ирина Яковлева',
+								special: 'Программа МВА – это просто колоссальный опыт не только бизнес администрирования, но и психологии и экономики.',
+								slogan: 'Ведущий эксперт межрегиональной инспекции Банка России по Центральному федеральному округу',
+								desc: '«Какие у меня были ожидания от программы МВА в ИДАБ? Безусловно, после окончания программы «Инспектор коммерческого банка» хотелось и дальше повышать свой уровень, двигаться по карьерной лестнице, и может быть что-то поменять в своей профессиональной жизни. Спасибо ИДАБу, это удалось. В целом программа замечательная, всем рекомендую. Почему ИДАБ? По большому счету передо мной не стоял выбор, поскольку я заканчивала программу «Инспектор коммерческого банка» в ИДАБ и МВА, конечно же, захотела закончить в своей Альма-матер. Очень надеюсь, что программа DBA тоже будет в ИДАБ и надеюсь на скорейшую встречу.»'
+							},
+							{
+								i: ++i,
+								title: 'Алексей Беляков',
+								special: 'Программы МВА ИДАБ помогут Вам приобрести навыки, позволяющие реализовать все это не только применительно к себе, но и к тому предприятию, на котором вы работаете.',
+								slogan: 'Директор МУП «Оленегорские тепловые сети», г. Оленегорск, Мурманская область',
+								desc: '«Почему я выбрал МВА в ИДАБ? Как топ-менеджер я ассоциирую свой успех с успехом того предприятия, которым руковожу. А что является успехом для предприятия? Его эффективное функционирование: четко выстроенные бизнес-процессы, налаженные связи, внутренние и внешние коммуникации. Оно должно развиваться и приумножать свой капитал.  В ИДАБ учат развивать коммуникации, успешно проводить переговоры, эффективно использовать свое рабочее время, структурировать свой бизнес, повышать свою личную эффективность. Все эти знания и навыки помогают мне в моей текущей работе. Поэтому, выбирая МВА, выбирайте МВА в ИДАБ.»'
+							}];
+				.slider-exp__arrows
+					button.slider-exp__arrow_prev.slider-exp__arrow(): svg.svg.slider-exp__arrow-icon(width="28" height="14"): use(xlink:href="images/sprite.svg#prev")
+					.slider-exp__arrow-separator: svg.svg(width="31" height="49"): use(xlink:href="images/sprite.svg#slider-separator")
+					button.slider-exp__arrow_next.slider-exp__arrow(): svg.svg.slider-exp__arrow-icon(width="28" height="14"): use(xlink:href="images/sprite.svg#next")
+				.slider-exp__container: each exp in exps
+					.slider-exp__slide: .section-exp__card.card-exp.row
+						.col-xs-12.col-sm-3.col-md-5: img.card-exp__pr(src="images/exp/" + exp.i + ".jpg" width="532" height="686")
+						.col-xs-12.col-sm-9.col-md-6
+							.card-exp__title «#{exp.special}»
+							.card-exp__slogan
+								| #{exp.title},
+								//- |, 37 лет
+								br
+								| #{exp.slogan}
+							.card-exp__social.nav-social-exp
+								ul.nav-social-exp__list
+									li.nav-social-exp__item: a.nav-social-exp__link(href="#"): svg.svg.nav-social-exp__icon(width="23" height="23"): use(xlink:href="images/sprite.svg#square-instagram")
+									li.nav-social-exp__item: a.nav-social-exp__link(href="#"): svg.svg.nav-social-exp__icon(width="23" height="23"): use(xlink:href="images/sprite.svg#square-google-plus")
+									li.nav-social-exp__item: a.nav-social-exp__link(href="#"): svg.svg.nav-social-exp__icon(width="23" height="23"): use(xlink:href="images/sprite.svg#square-facebook")
+									li.nav-social-exp__item: a.nav-social-exp__link(href="#"): svg.svg.nav-social-exp__icon(width="23" height="23"): use(xlink:href="images/sprite.svg#square-vk")
+							.card-exp__desc
+								p.p #{exp.desc}
+								//- p.p Разнообразный и богатый опыт консультация с широким активом в значительной степени обуславливает создание новых предложений. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности способствует подготовки и реализации соответствующий условий активизации.
+
+								//- p.p Не следует, однако забывать, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Задача организации, в особенности же рамки и место обучения кадров позволяет выполнять важные задания по разработке модели развития.	
+		section.section-video: .container-fluid: .slider-video
+			.slider-video__container
+				-
+					var videos = [{
+						i: 1,
+						href: 'https://www.youtube.com/embed/679-5_eHkMI?autoplay=1&rel=0'
+					},{
+						i: 2,
+						href: 'https://www.youtube.com/embed/XuoNzzWXvPY?autoplay=1&rel=0'
+					},{
+						i: 3,
+						href: 'https://www.youtube.com/embed/Vxn-BsswxlA?autoplay=1&rel=0'
+					},{
+						i: 4,
+						href: 'https://www.youtube.com/embed/-zdzF9QOkwE?autoplay=1&rel=0'
+					},{
+						i: 5,
+						href: 'https://www.youtube.com/embed/rXSHqes1VCI?autoplay=1&rel=0'
+					},];
+				each video in videos
+					.slider-video__slide: a.card-video(href=video.href data-fancybox="video")
+						img.card-video__pr(src="images/video/" + video.i + ".png", alt="" width="1120" height="630")
+			.slider-video__arrows
+					button.slider-video__arrow_prev.slider-video__arrow(): svg.svg.slider-video__arrow-icon(width="28" height="14"): use(xlink:href="images/sprite.svg#prev")
+					.slider-video__arrow-separator: svg.svg(width="31" height="49"): use(xlink:href="images/sprite.svg#slider-separator")
+					button.slider-video__arrow_next.slider-video__arrow(): svg.svg.slider-video__arrow-icon(width="28" height="14"): use(xlink:href="images/sprite.svg#next")
+		section.section-cert
+			h2.h2.h2_border_left.section-cert__title
+				.container-fluid Cертификаты после обучения
+			.container-fluid: .row
+				.col-xs-12.col-sm-4
+					.section-cert__card: .card-cert
+						.card-cert__number 1
+						a.card-cert__wrap(href="images/cert/full/diplom-1.jpg" data-fancybox="cert"): img.card-cert__pr(src="images/cert/diplom-1.jpg" width="310" height="220" alt="Сертификат")
+						.card-cert__desc 
+							| Диплом установленного образца о профессиональной переподготовке с присвоением квалификации «Мастер делового администрирования» по выбранной специализации.  
+				.col-xs-12.col-sm-4
+					.section-cert__card: .card-cert
+						.card-cert__number 2
+						a.card-cert__wrap(href="images/cert/full/2.jpg" data-fancybox="cert"):  img.card-cert__pr(src="images/cert/2.jpg" width="310" height="220" alt="Сертификат")
+						.card-cert__desc 
+							| Сертификат о прохождении международной стажировки по теме: «Управление эффективностью бизнеса» (Банковский Институт, Чешская Республика).  
+				.col-xs-12.col-sm-4
+					.section-cert__card: .card-cert
+						.card-cert__number 3
+						a.card-cert__wrap(href="images/cert/full/3.jpg" data-fancybox="cert"):  img.card-cert__pr(src="images/cert/3.jpg" width="310" height="220" alt="Сертификат")
+						.card-cert__desc Сертификат / Диплом Института финансовых аналитиков (IFA, Великобритания), подтверждающий международное признание программы МВА Института делового администрирования и бизнеса. 
+		section.section-teacher#section-teacher
+			h2.h2.h2_border_right.section-teacher__title: .container-fluid Наши преподаватели
+			.container-fluid: .row: .section-teacher__container
+				-
+					var i = 0,
+							teachers = [{
+								title: 'Лопатников Александр',
+								slogan: 'Руководитель авторской программы MBA «Управление стоимостью бизнеса».',
+								i: ++i
+							},
+							{
+								title: 'Тосунян Гарегин',
+								slogan: 'Председатель итоговой аттестационной комиссии по программе МВА – Банковский менеджмент.',
+								i: ++i
+							},
+							{
+								title: 'Завадский Владислав',
+								slogan: 'Руководитель авторской программы MBA «Управление продажами», бизнес-тренер, консультант по организации продаж.',
+								i: ++i
+							},
+							{
+								title: 'Торичко Роман',
+								slogan: 'Бизнес-тренер по курсу «Бренд-менеджмент».',
+								i: ++i
+							},
+							{
+								title: 'Шаврин Илья',
+								slogan: 'Бизнес-тренер по курсу: «Техники сложных переговоров». ',
+								i: ++i
+							},
+							{
+								title: 'Марич Игорь',
+								slogan: 'Учредитель и руководитель дискуссионного клуба ИДАБ «Инвест-менеджмент».',
+								i: ++i
+							},
+							{
+								title: 'Иванов Андрей',
+								slogan: 'Бизнес-тренер по курсу: «Investor Relations: повышение капитализации компании, работа на рынке капитала».',
+								i: ++i
+							},
+							{
+								title: 'Ларионова Ирина',
+								slogan: 'Преподаватель программы «МВА - Банковский менеджмент».',
+								i: ++i
+							},
+							{
+								title: 'Ярыгина Ирина',
+								slogan: 'Преподаватель программ для работников Банка России.',
+								i: ++i
+							},
+							{
+								title: 'Кирсанова Ирина',
+								slogan: 'Бизнес-тренер по курсам «Стратегический маркетинг», «Управление маркетингом на предприятии», «Маркетинг и продажи».',
+								i: ++i
+							},
+							{
+								title: 'Финкельштейн Григорий',
+								slogan: 'Разработчик бизнес-кейсов по программам МВА. Бизнес-тренер по курсам: "Корпоративная культура", "Реинжиниринг бизнес-процессов".',
+								i: ++i
+							},
+							{
+								title: 'Чистякова Елена',
+								slogan: 'Бизнес-тренер по блоку дисциплин личностного роста, профессиональный коуч.',
+								i: ++i
+							},
+							{
+								title: 'Терехов Алексей',
+								slogan: 'Бизнес-тренер по курсам: "Финансовый менеджмент".',
+								i: ++i
+							},
+							{
+								title: 'Сухарева Наталья',
+								slogan: 'Доцент, преподаватель делового английского языка.',
+								i: ++i
+							},
+							{
+								title: 'Терехова Анжелика',
+								slogan: 'Преподаватель по программам МВА по курсу: «Система внутреннего контроля организаций», а также по программам Банка России.',
+								i: ++i
+							},
+							{
+								title: 'Кордичев Алексей',
+								slogan: 'Преподаватель по программе МВА «Банковский менеджмент», курсы: «Построение системы риск-менеджмента кредитной организации», «Инструментарий банковского менеджмента».',
+								i: ++i
+							}];
+				each teacher in teachers
+					.section-teacher__card: .card-teacher
+						.card-teacher__wrap
+							.card-teacher__inner
+								a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#teacher-" + teacher.i data-fancybox="teacher") Смотреть резюме
+							img.card-teacher__pr(src="images/teacher/" + teacher.i + ".jpg" width="308" height="291" alt="teacher")
+						.card-teacher__text
+							.card-teacher__title #{teacher.title}
+							.card-teacher__desc #{teacher.slogan}
+			//- 
+				.section-teacher__card: .card-teacher
+					.card-teacher__wrap
+						.card-teacher__inner
+							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
+						img.card-teacher__pr(src="images/teacher-2.jpg" width="308" height="291" alt="teacher")
+					.card-teacher__text
+						.card-teacher__title Анна Денисова
+						.card-teacher__desc Директор Института делового администрирования и бизнеса
+		
+				.section-teacher__card: .card-teacher
+					.card-teacher__wrap
+						.card-teacher__inner
+							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
+						img.card-teacher__pr(src="images/teacher-3.jpg" width="308" height="291" alt="teacher")
+					.card-teacher__text
+						.card-teacher__title Завадский Владислав
+						.card-teacher__desc Руководитель авторской программы MBA «Управление продажами»
+		
+				.section-teacher__card: .card-teacher
+					.card-teacher__wrap
+						.card-teacher__inner
+							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
+						img.card-teacher__pr(src="images/teacher-4.jpg" width="308" height="291" alt="teacher")
+					.card-teacher__text
+						.card-teacher__title Финкельштейн Григорий
+						.card-teacher__desc Разработчик бизнес-кейсов по программам МВА
+
+				.section-teacher__card: .card-teacher
+					.card-teacher__wrap
+						.card-teacher__inner
+							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
+						img.card-teacher__pr(src="images/teacher-5.jpg" width="308" height="291" alt="teacher")
+					.card-teacher__text
+						.card-teacher__title Иванов Андрей
+						.card-teacher__desc Бизнес-тренер по курсу: «Investor Relations: повышение капитализации компании, работа на рынке капитала».
+	
+				.section-teacher__card: .card-teacher
+					.card-teacher__wrap
+						.card-teacher__inner
+							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
+						img.card-teacher__pr(src="images/teacher-6.jpg" width="308" height="291" alt="teacher")
+					.card-teacher__text
+						.card-teacher__title Лихачева Ольга
+						.card-teacher__desc Преподаватель по курсам «Финансовый менеджмент», «Разработка финансовых политик» и др.
+
+				.section-teacher__card: .card-teacher
+					.card-teacher__wrap
+						.card-teacher__inner
+							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
+						img.card-teacher__pr(src="images/teacher-7.jpg" width="308" height="291" alt="teacher")
+					.card-teacher__text
+						.card-teacher__title Марич Игорь
+						.card-teacher__desc Учредитель и руководитель дискуссионного клуба ИДАБ «Инвест-менеджмент»
+	
+				.section-teacher__card: .card-teacher
+					.card-teacher__wrap
+						.card-teacher__inner
+							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
+						img.card-teacher__pr(src="images/teacher-8.jpg" width="308" height="291" alt="teacher")
+					.card-teacher__text
+						.card-teacher__title Шаврин Илья
+						.card-teacher__desc Бизнес-тренер по курсу: «Техники сложных переговоров»
+		section.section-order#section-order
+			.container-fluid: .row
+				.col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-0.col-lg-5
+					h2.h2.section-order__title 
+						b.text_color_burgundy ИДАБ
+						|  — бизнес-школа для лидеров будущего
+					.section-order__card: .card-order-step
+						.card-order-step__number 1.
+						.card-order-step__text
+							.card-order-step__title Подавайте заявку
+							.card-order-step__desc Получите бесплатную консультацию методистов и пройдите собеседование в Институте.
+
+					.section-order__card: .card-order-step
+						.card-order-step__number 2.
+						.card-order-step__text
+							.card-order-step__title Начинайте обучение
+							.card-order-step__desc После заключения договора посещайте лекции и изучайте реальные кейсы от преподавателей-практиков. 
+
+					.section-order__card: .card-order-step
+						.card-order-step__number 3.
+						.card-order-step__text
+							.card-order-step__title Растите карьерно
+							.card-order-step__desc Умело презентуйте себя, пользуйтесь багажом деловых знакомств и становитесь лидером в управленческом секторе.
+					.visible-xs: a.section-order__button.button.button_theme_burgundy.button_size_md(href="#order" data-fancybox) Отправить заявку
+				.col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-0.col-lg-6
+					.hidden-xs.section-order__popup.popup-order: form
+						.popup-order__title Хотите обучаться у опытных практиков? ИДАБ принимает заявки на участие!
+						p.p.popup-order__slogan Заполните форму и мы свяжемся с вами для уточнения деталей
+
+						.popup-order__group.group-field
+							.group-field__icon: svg.svg.block(width="22" height="24"): use(xlink:href="images/sprite.svg#user")
+							input.group-field__input(placeholder="Ваше имя")
+
+						.popup-order__group.group-field
+							.group-field__icon: svg.svg.block(width="25" height="25"): use(xlink:href="images/sprite.svg#phone2")
+							input.group-field__input(placeholder="Номер телефона")
+
+						.popup-order__group.group-field
+							.group-field__icon: svg.svg.block(width="32" height="21"): use(xlink:href="images/sprite.svg#email")
+							input.group-field__input(placeholder="Электронная почта")
+
+						button.popup-order__button.button.button_theme_burgundy.button_size_lg Отправить заявку
+		footer.section-foo: .container-fluid: .section-foo__container
+			.section-foo__column.section-foo__column_logo
+				img.section-foo__logo(src="images/foo-logo.png", alt="Лого" width="252" height="99")
+			.section-foo__column.section-foo__column_contact
+				.section-foo__side.section-foo__side_contact
+					h3.h3.section-foo__title КОНТАКТЫ
+					.section-foo__contact 
+						| idab@guu.ru
+						br
+						| Рязанский проспект, дом 99, Бизнес-Центр
+						br
+						| (495)660-93-54  |  (495) 376-42-33
+				.section-foo__side.section-foo__side_social
+					a.section-foo__guu(href="http://www.guu.ru") www.guu.ru
+					nav.nav-social-foo
+						ul.nav-social-foo__list
+							li.nav-social-foo__item: a.nav-social-foo__link(href="#")
+								svg.svg.block(width="37" height="37"): use(xlink:href="images/sprite.svg#circle-instagram")
+							li.nav-social-foo__item: a.nav-social-foo__link(href="#")
+								svg.svg.block(width="37" height="37"): use(xlink:href="images/sprite.svg#circle-vk")
+							li.nav-social-foo__item: a.nav-social-foo__link(href="#")
+								svg.svg.block(width="37" height="37"): use(xlink:href="images/sprite.svg#circle-google-plus")
+							li.nav-social-foo__item: a.nav-social-foo__link(href="#")
+								svg.svg.block(width="37" height="37"): use(xlink:href="images/sprite.svg#circle-facebook")
+		include pug/foo
+		include pug/popup
+		include pug/scripts
+		//- script(src="node_modules/pixel-glass/script.js")
+		//- link(rel="stylesheet", href="node_modules/pixel-glass/styles.css")

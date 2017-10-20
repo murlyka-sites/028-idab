@@ -1,0 +1,564 @@
+.section-header {
+	position sticky
+	top 0
+	z-index 10
+	background white
+	width 100%
+	box-shadow 0 3px 7px rgba(32, 31, 31, 0.35)
+	
+	&__container {
+		display flex
+		justify-content space-between
+		align-items center
+		padding 8px 0
+	}
+	
+	&__column {
+		margin-right 10px 
+		
+		&:last-child {
+			margin-right 0
+		}
+		
+		&_logo {
+			margin-right auto
+			
+			@media (min-width $lg) {
+				margin-right 0
+				width 150px 
+			}
+		}
+	}
+
+	&__nav {
+		padding 15px
+		font-size 16px
+		color $color-signal-black
+		text-transform uppercase
+		
+		@media (min-width $lg) {
+			padding 0
+			font-size 14px
+		}
+	}
+	
+	&__burger {
+		color $color-signal-black
+		
+		&:hover,
+		&:focus,
+		&:active {
+			color $color-signal-black
+			text-decoration none
+		}
+	}
+	
+	&__logo {
+		max-width 100%
+		height auto
+	}
+}
+
+.section-main {
+	position relative
+	overflow hidden
+	background-color $color-signal-black 
+	color white
+	padding 20px 0
+	
+	@media (min-width $md) {
+		// min-height 1000px
+		padding 100px 0
+		
+		background-image  
+		background-repeat no-repeat
+		// background-position left center, right center
+		background-size auto 100%
+		// background url(../images/bg-main-mask.png) center center / cover no-repeat,
+							 // url(../images/bg-main.jpg) bottom center / cover no-repeat
+	}
+	
+	&::before, &::after {
+		content ""
+		display block
+		position absolute
+	}
+	
+	&::before {
+		display none
+		top 0
+		width 55% 
+		height 100%		
+		background url(../images/bg-main-mask.png) top right / cover no-repeat
+		
+		@media (min-width $md) {
+			display block
+		}
+	}
+	
+	&::after {
+		top 0
+		left 50%
+		height 100% 
+		width 1920px
+		background url(../images/bg-main-decor.png) bottom right no-repeat
+		transform translate(-50%, 0)
+	}
+
+	// @media (min-width $md) {
+	// 	min-height 1000px
+	// 	padding 305px 0 0
+	// 	background url(../images/bg-main.jpg) bottom center / cover
+	// }
+		
+	&__container {
+		z-index 5
+		position relative
+	}
+	
+	&__title {
+		margin-bottom 20px
+		
+		@media (min-width $sm) {
+			margin-bottom 40px
+		}
+	}	
+	
+	&__slogan {
+		margin-bottom 20px
+		
+		@media (min-width $sm) {
+			margin-bottom 64px 
+		}
+	}
+	
+	&__button {
+		text-transform uppercase
+		width 300px 
+	}
+	
+	&__button {}
+}
+
+.section-history {
+	position relative
+	overflow hidden
+	padding 25px 0
+	
+	&:before {
+		content ""
+		display block
+		position absolute
+		top 0
+		left 50%
+		width 1920px
+		height 100%
+		transform translate(-50%, 0)
+		background #bad8e3
+		clip-path polygon(69.01% 0, 100% 0, 100% 100%, 41.55% 100% )
+		
+		@media (min-width 1920px) {
+			width 100%
+			left 0
+			transform none
+		}
+	}
+	
+	@media (min-width $sm) {
+		padding 100px 0
+	}
+	
+	&__title {
+		margin-bottom 15px
+		
+		@media (min-width $sm) {
+			margin-bottom 80px 
+		}
+	}
+	
+	&__desc {
+		padding 10px 0 0
+		
+		@media (min-width $sm) {
+			padding 50px 0 0
+		}
+	}
+	
+	&__button {
+		width 300px
+	}
+}
+
+.section-course {
+	
+	padding 25px 0
+	
+	
+	@media (min-width $sm) {
+		padding 200px 0 100px
+		background url(../images/bg-course.jpg) top center no-repeat
+	}
+	
+	@media (min-width 1920px) {
+		background-size 100% auto
+	}
+	
+	&__title {
+		margin-bottom 25px
+		
+		@media (min-width $sm) {
+			margin-bottom 150px 
+		}
+	}
+	
+	&__card {
+		margin-bottom 55px
+		
+		&:last-child {
+			margin-bottom 0
+		}
+	}
+	
+	&__button {
+		display block
+		width 420px
+		margin 80px auto 0
+	} 
+}
+
+.section-detail {
+	padding 25px 0
+	
+	@media (min-width $sm) {
+		padding 100px 0
+	}
+	
+	&__container {
+		@media (min-width $sm) {
+			
+			display flex
+		}
+	}
+	
+	&__column {
+		&_pr {
+			margin-bottom 15px 
+			
+			@media (min-width $sm) {
+				width 400px 
+				margin-right 50px
+			}
+			
+			@media (min-width $lg) {
+				width auto
+				margin-right 110px 
+			}
+		}
+		
+		&_desc {
+			flex auto
+			
+			@media (min-width $lg) {
+				padding 50px 0 0
+			}
+		}
+	}
+	
+	&__pr {
+		max-width 100%
+		height auto
+	}
+
+	&__title {
+		margin-bottom 80px
+	}
+	
+	&__h3 {
+		margin-bottom 15px
+		font-size 18px 
+		font-weight 700 
+		
+		@media (min-width $sm) {
+			margin-bottom 30px 
+		}
+	}
+	
+	&__group {
+		margin-bottom 10px
+		
+		@media (min-width $sm) {
+			margin-bottom 50px
+		}
+	}
+}
+
+.section-what {
+	padding 25px 0
+	
+	@media (min-width $sm) {
+		padding 100px 0
+	}
+	
+	&__title {
+		margin-bottom 25px 
+		
+		@media (min-width $sm) {
+			margin-bottom 100px
+		}
+	}
+	
+	&__card {
+		margin-bottom 10px 
+		
+		@media (min-width $sm) {
+			margin-bottom 75px
+		}
+	}
+	
+	&__button {
+		width 300px 
+	}
+}
+
+.section-numbers {
+	padding 25px 0
+	background-color $color-signal-black
+	color white
+	
+	@media (min-width $sm) {
+		padding 80px 0 100px
+	}
+}
+
+.section-exp {
+	padding 25px 0
+	
+	@media (min-width $sm) {
+		padding 100px 0
+	}
+
+	&__title {
+		margin-bottom 25px
+		
+		@media (min-width $sm) {
+			margin-bottom 115px 
+		}
+		
+	}
+}
+
+.section-cert {
+	padding 25px 0
+	
+	@media (min-width $sm) {
+		padding 100px 0
+	}
+	
+	&__title {
+		margin-bottom 25px 
+			
+		 
+		@media (min-width $sm) {
+			margin 0 0 100px 
+		}
+	}
+	
+	&__card {
+		margin-bottom 25px 
+	}
+}
+
+.section-teacher {
+	padding 25px 0 
+	
+	@media (min-width $sm) {
+		padding 100px 0
+	}
+	
+	&__container {
+		font-size 0 
+		
+		@supports (flex-wrap: wrap) {
+			display flex
+			flex-wrap wrap
+			align-items stretch
+		}
+	}
+	
+	&__title {
+		margin-bottom 20px
+		 
+		@media (min-width $sm) {
+			margin-bottom 80px 
+		}
+	}
+	
+	&__card {
+		display inline-block
+		vertical-align top
+		width 100% 
+		margin-bottom 40px 
+		padding 0 14px 
+		
+		@media (min-width 600px) {
+			width 50%
+		}
+		
+		@media (min-width $md) {
+			width 33.333% 
+		}
+		
+		// @media (min-width $lg) {
+		// 	width 25%
+		// 	margin-bottom 50px
+		// }
+	}
+}
+
+.section-order {
+	padding 20px 0
+	background-color $color-signal-black
+	color white
+	
+	@media (min-width $sm) {
+		padding 95px 0 50px	}
+	
+	@media (min-width $md) {
+		background $color-signal-black url(../images/bg-order.jpg) 45% center / auto 100% no-repeat;
+		
+		&:before {
+			content ""
+			display block
+			top 0
+			left 0 
+		}
+	}
+	
+	&__title {
+		margin-bottom 25px 
+		
+		@media (min-width $sm) {
+			margin-bottom 90px 
+		}
+	}
+	
+	&__card {
+		margin-bottom 25px 
+		
+		@media (min-width $sm) {
+			margin-bottom 65px 
+		}
+		
+		&:last-child {
+			margin-bottom 0
+		}
+	}
+	
+	&__button {
+		display block
+		width 300px
+	}
+	
+	&__popup {
+		margin-top 100px 
+	}
+}
+
+.section-foo {
+	padding 35px 0
+	
+	&__container {
+		@media (min-width $md) {
+			display flex
+			align-items flex-start
+		}
+	}
+	
+	&__column {
+		margin-bottom 20px
+		
+		@media (min-width $md) {
+			margin-right 25px
+			margin-bottom 0
+		}
+		
+		@media (min-width $lg) {
+			margin-right 50px
+		}
+		
+		&:last-child {
+			margin-right 0
+		}
+		
+		&_logo {
+		}
+		
+		&_contact {
+			@media (min-width $sm) {
+				flex auto
+				display flex
+				align-items center
+				justify-content space-between 
+			}
+		}
+	}
+	
+	&__side {
+		@media (min-width $sm) {
+			margin-right 20px 
+		}
+		
+		@media (min-width $lg) {
+			margin-right 85px
+		}
+		
+		&:last-child {
+			margin-right 0
+		}
+		
+		&_social {
+			text-align left
+			
+			@media (min-width $sm) {
+				flex auto
+				text-align right
+			}
+			
+			@media (min-width $lg) {
+				display flex
+				align-items center
+				justify-content flex-end
+			}
+		}
+	}
+	
+	&__logo {
+		max-width 100% 
+		height auto
+	}
+	
+	&__title {
+		margin 0
+		font-size 18px 
+		font-weight 400 
+		line-height 30px 
+	}
+	
+	&__contact {
+		color #a7a9aa
+		font-size 16px 
+		line-height 30px
+	}
+	
+	&__guu {
+		display inline-block
+		font-size 16px 
+		line-height 30px
+		margin-bottom 10px 
+		
+		@media (min-width $lg) {
+			margin-right 30px
+			margin-bottom 0
+		}
+	}
+}

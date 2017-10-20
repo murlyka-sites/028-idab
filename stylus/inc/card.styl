@@ -1,0 +1,318 @@
+
+.card-course {
+	padding 14px
+	box-shadow 0 11px 28px 5px rgba(184, 197, 192, 0.23)
+	background #FFF 
+	
+	@media (min-width $sm) {
+		padding 25px 60px
+	}
+	
+	@media (min-width $md) {
+		display flex
+		align-items center
+	}
+	
+	&__column {
+		@media (min-width $md) {
+			padding-left 14px 
+			padding-right 14px
+		}
+		
+		&_header {
+			padding-top 20px 
+			position relative
+			
+			@media (min-width $md) {
+				flex none
+				width 330px
+				
+				&:after {
+					content ""
+					display block
+					position absolute
+					top 0
+					right 0
+					width 1px
+					height 100%
+					background #bec1c4
+					opacity 0.5
+				}
+			}
+		}
+		
+		&_desc {
+			
+			// @media (min-width $lg) {
+			// 	display flex
+			// 	align-items center
+			// 	justify-content space-between
+			// }
+		}
+	}
+	
+	&__side {
+		&_desc {
+			padding 20px 0
+			flex auto
+		}
+		
+		&_button {
+			width 252px
+			flex none
+			align-self center
+			
+			// @media (min-width $lg) {
+			// 	padding-left 28px 
+			// }
+		}
+	}
+	
+	&__title {
+		margin-bottom 15px 
+		font-size 26px 
+		font-weight 700 
+		color $color-burgundy
+	}
+	
+	&__slogan {
+		color #7d8184
+	}
+	
+	&__desc {
+		margin 0
+	}
+	
+	&__button {
+		width 252px
+	}
+}
+
+.card-numbers {
+	display flex
+	
+	&__desc {
+		margin-top 50px 
+		margin-left -10px 
+		font-size 16px 
+	}
+}
+
+.card-what {
+	display flex
+	
+	&__column {
+		&_pr {
+			margin-right 30px
+		}
+	}
+	
+	&__pr {
+		display flex
+		align-items center
+		justify-content center
+		width 85px 
+		height 85px
+		background #759FB5 
+	}
+	
+	&__number {
+		position relative
+		left -50px
+		font-size 24px 
+		&:before {
+			content "— "
+		}
+		
+		&:after {
+			content " —"
+		}
+	}
+}
+
+.card-exp {
+	&__pr {
+		width 100%
+		height auto
+	}
+	
+	&__title {
+		position relative
+		margin 10px 0 24px
+		position relative
+		font-size 20px
+		
+		@media (min-width $sm) {
+			margin 10px 0 24px
+		}
+		
+		@media (min-width $md) {
+			margin 48px 0 24px -113px
+			padding 10px 20px
+			background white
+		}
+	}
+	
+	&__slogan {
+		margin-bottom 15px 
+		color #9c9fa1
+		font-size 16px
+		line-height 28px 
+		
+		@media (min-width $xs) {
+			margin-bottom 35px 
+		}
+	}
+	
+	&__social {
+		margin-bottom 15px 
+		
+		@media (min-width $xs) {
+			margin-bottom 45px 
+		}
+	}
+}
+
+.card-cert {
+	position relative
+	padding 0
+	
+	@media (min-width $sm) {
+		padding 70px 0 0
+	}
+	
+	&__number {
+		display none
+		position absolute
+		right 0
+		top 0
+		z-index -1 
+		width 85px 
+		font-size 120px 
+		line-height 1 
+		font-weight 700 
+		opacity 0.15
+		text-align center
+		
+		@media (min-width $sm) {
+			display block
+		}
+		
+	}
+	
+	&__wrap {
+		margin 0 15px
+		display block
+		
+		@media (min-width $md) {
+			margin 0 30px
+		}
+	}
+
+	&__pr {
+		display block
+		margin 0 0 10px
+		width 100%
+		height auto
+		box-shadow 0 10px 49px 9px rgba(189, 189, 197, 0.63)
+		
+		@media (min-width $sm) {
+			margin 0 0 40px
+		}
+	}
+	
+	&__desc {
+		text-align center
+		font-size 14px 
+		line-height 25px
+	}
+}
+
+.card-teacher {
+	height 100%
+	font-size 16px 
+	line-height 28px 
+	box-shadow 0 11px 28px 5px rgba(184, 197, 192, 0.23)
+	background-color #fcfcfc
+	
+	&__wrap {
+		position relative
+	}
+	
+	&__inner {
+		position absolute
+		bottom 0
+		left 0
+		z-index 1
+		width 100%
+		height 140px
+		padding 60px 10px 0
+		opacity 0
+		text-align center
+		background linear-gradient(180deg, rgba(255, 255, 255, 0), black)
+	}
+	
+	&__wrap:hover &__inner {
+		opacity 1
+	}
+	
+	&__pr {
+		width 100%
+		height auto
+		display block
+	}
+
+	&__text {
+		padding 20px
+	}
+
+	&__title {
+		font-weight 700 
+		color $color-signal-black
+	}
+	
+	&__desc {
+		color #a3a6a7
+	}
+}
+
+.card-order-step {
+	@media (min-width $xs) {
+		display flex
+		align-items flex-start
+	}
+	
+	&__number {
+		width 40px
+		padding 20px 0 0
+		margin-right 28px
+		text-align center
+		color rgba(255, 255, 255, 0.4)
+		font-size 40px
+		font-weight 700
+		
+		@media (min-width $xs) {
+			flex none
+			width 84px
+			font-size 72px			
+		}
+	}
+	
+	&__text {
+		font-size 18px 
+		line-height 20px
+		
+		@media (min-width $xs) {
+			line-height 30px 
+		}
+	}
+	
+	&__title {
+		margin-bottom 5px 
+		font-weight 700 
+		
+		@media (min-width $xs) {
+			margin-bottom 20px 
+		}
+	}
+}

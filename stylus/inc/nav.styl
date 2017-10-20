@@ -1,0 +1,56 @@
+.nav-social-exp,
+.nav-social-foo {
+	font-size 0
+	 
+	&__item {
+		display inline-block
+		margin-right 10px 
+		
+		&:last-child {
+			margin-right 0
+		}
+	}
+	
+	&__list {
+		list-style-type none
+		padding 0
+		margin 0
+	}
+	
+	&__link {
+		text-decoration none
+		
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration none
+		}
+	}
+	
+	&__icon {
+		display block
+	}
+}
+
+.nav-social-exp {
+	&__link {
+		color #9cb4c1
+		&:hover,
+		&:focus,
+		&:active {
+			color $color-burgundy
+		}
+	}
+}
+
+.nav-social-foo {
+	&__link {
+		color #c5c6c7
+		
+		&:hover,
+		&:focus,
+		&:active {
+			color $color-burgundy
+		}
+	}
+}
