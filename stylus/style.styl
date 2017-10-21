@@ -600,12 +600,11 @@ html {
 			
 			@media (min-width $xs) {
 				display flex
-				height 300px
 			}
 			
 			@media (min-width $sm) {
 				display block
-				width 400px 
+				width calc(50vh * 1.5)
 				height 100%
 			}
 		}
@@ -668,7 +667,7 @@ html {
 		height auto
 		object-fit cover
 		
-		@media (min-width $xs) {
+		@media (min-width $sm) {
 			height 100%
 		}
 	}
