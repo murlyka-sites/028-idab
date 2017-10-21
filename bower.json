@@ -1,0 +1,20 @@
+{
+  "name": "idab",
+  "homepage": "https://github.com/murlyka-sites/028-idab",
+  "authors": [
+    "Milok <milok.murlika@yandex.ua>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
