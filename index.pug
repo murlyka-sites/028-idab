@@ -15,10 +15,7 @@ html(lang="ru")
 				.container-fluid История ИДАБ
 			.container-fluid: .row
 				.col-xs-12.col-md-6.col-md-offset-1.col-md-push-5
-					.video-wrap: video.video-wrap__container(controls)
-						source(src="video/video.webm" type="video/webm")
-						source(src="video/video.ogv" type='video/ogg; codecs="theora, vorbis"')
-						source(src="video/video.mp4" type="video/mp4")
+					.video-wrap: iframe.video-wrap__container(width="560" height="315" src="https://www.youtube.com/embed/XuoNzzWXvPY" frameborder="0" allowfullscreen)
 						p is not visible, most likely your browser does not support HTML5 video
 				.col-xs-12.col-md-5.col-md-pull-7
 					.section-history__desc
