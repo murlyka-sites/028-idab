@@ -594,21 +594,21 @@ html(lang="ru")
 							.card-order-step__desc Умело презентуйте себя, пользуйтесь багажом деловых знакомств и становитесь лидером в управленческом секторе.
 					.visible-xs: a.section-order__button.button.button_theme_burgundy.button_size_md(href="#order" data-fancybox) Отправить заявку
 				.col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-0.col-lg-6
-					.hidden-xs.section-order__popup.popup-order: form
+					.hidden-xs.section-order__popup.popup-order: form(action="mail.php" method="POST")
 						.popup-order__title Хотите обучаться у опытных практиков? ИДАБ принимает заявки на участие!
 						p.p.popup-order__slogan Заполните форму и мы свяжемся с вами для уточнения деталей
 
 						.popup-order__group.group-field
 							.group-field__icon: svg.svg.block(width="22" height="24"): use(xlink:href="images/sprite.svg#user")
-							input.group-field__input(placeholder="Ваше имя")
+							input.group-field__input(type="text" placeholder="Ваше имя" name="name" required)
 
 						.popup-order__group.group-field
 							.group-field__icon: svg.svg.block(width="25" height="25"): use(xlink:href="images/sprite.svg#phone2")
-							input.group-field__input(placeholder="Номер телефона")
+							input.group-field__input(type="tel" placeholder="Номер телефона" name="phone" required)
 
 						.popup-order__group.group-field
 							.group-field__icon: svg.svg.block(width="32" height="21"): use(xlink:href="images/sprite.svg#email")
-							input.group-field__input(placeholder="Электронная почта")
+							input.group-field__input(type="email" placeholder="Электронная почта" name="mail" required)
 
 						button.popup-order__button.button.button_theme_burgundy.button_size_lg Отправить заявку
 		footer.section-foo: .container-fluid: .section-foo__container

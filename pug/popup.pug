@@ -400,22 +400,24 @@
 				p.p С 2006 года работал в ОАО АКБ «РОСБАНК», где занимался внедрением и развитием систем управления рисками, совершенствованием скоринговых систем, а также принимал участие в управлении проектами в рамках интеграции с группой Societe Generale. В январе 2010 года возглавил Кредитный департамент (в дальнейшем Блок контроля рисков) ЗАО «Банк Русский Стандарт», курировал работу кредитного центра, подразделений андеррайтинга и верификации, а также отвечал за взыскание просроченной задолженности. В конце 2013 года присоединился к команде «Восточного» и возглавил Блок рисков. В феврале 2015 года назначен на пост первого заместителя председателя Правления. В октябре 2015 г. назначен председателем Правления банка.
 				p.p: a(href="http://www.vostbank.ru") http://www.vostbank.ru
 				p.p: a.popup-link.text_color_burgundy(data-fancybox-close href="#close") Вернуться
-
-	#order.popup-order: form
+	.popup-success#success
+		h2.h2.popup-sucess__title.text-center.text_color_burgundy Успех!
+		p.p.button.button_size_sm.button_theme_carmine-pink(data-fancybox-close) Форма успешно отправлена!
+	#order.popup-order: form(action="mail.php" method="POST")
 		.popup-order__title Хотите обучаться у опытных практиков? ИДАБ принимает заявки на участие!
 		p.p.popup-order__slogan Заполните форму и мы свяжемся с вами для уточнения деталей
 
 		.popup-order__group.group-field
 			.group-field__icon: svg.svg.block(width="22" height="24"): use(xlink:href="images/sprite.svg#user")
-			input.group-field__input(placeholder="Ваше имя")
+			input.group-field__input(type="text" placeholder="Ваше имя" name="name" required)
 
 		.popup-order__group.group-field
 			.group-field__icon: svg.svg.block(width="25" height="25"): use(xlink:href="images/sprite.svg#phone2")
-			input.group-field__input(placeholder="Номер телефона")
+			input.group-field__input(type="tel" placeholder="Номер телефона" name="phone" required)
 
 		.popup-order__group.group-field
 			.group-field__icon: svg.svg.block(width="32" height="21"): use(xlink:href="images/sprite.svg#email")
-			input.group-field__input(placeholder="Электронная почта")
+			input.group-field__input(type="email" placeholder="Электронная почта" name="mail" required)
 
 		p.p: button.popup-order__button.button.button_theme_burgundy.button_size_lg Отправить заявку
 		p.p: a.popup-link.text_color_burgundy(data-fancybox-close href="#close") Вернуться

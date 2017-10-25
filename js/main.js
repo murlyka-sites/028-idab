@@ -47,4 +47,20 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
+	$("form").submit(function() {
+		var $that = $(this);
+
+		$.ajax({
+			type: $(this).attr("method"),
+			url: $(this).attr("action"),
+			success: function() {
+				$that.trigger("reset");
+
+				$.fancybox.close();
+				$.fancybox.open({src: "#success"});
+			}
+		})
+
+		return false;
+	});
 })

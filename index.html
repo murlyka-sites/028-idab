@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css?ts=1508918522068">
+    <link rel="stylesheet" href="css/style.css?ts=1508925685090">
     <header class="section-header">
       <div class="container-fluid container-fluid_header">
         <div class="section-header__container">
@@ -1110,7 +1110,7 @@
           </div>
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-6">
             <div class="hidden-xs section-order__popup popup-order">
-              <form>
+              <form action="mail.php" method="POST">
                 <div class="popup-order__title">Хотите обучаться у опытных практиков? ИДАБ принимает заявки на участие!</div>
                 <p class="p popup-order__slogan">Заполните форму и мы свяжемся с вами для уточнения деталей</p>
                 <div class="popup-order__group group-field">
@@ -1119,7 +1119,7 @@
                       <use xlink:href="images/sprite.svg#user"></use>
                     </svg>
                   </div>
-                  <input class="group-field__input" placeholder="Ваше имя">
+                  <input class="group-field__input" type="text" placeholder="Ваше имя" name="name" required>
                 </div>
                 <div class="popup-order__group group-field">
                   <div class="group-field__icon">
@@ -1127,7 +1127,7 @@
                       <use xlink:href="images/sprite.svg#phone2"></use>
                     </svg>
                   </div>
-                  <input class="group-field__input" placeholder="Номер телефона">
+                  <input class="group-field__input" type="tel" placeholder="Номер телефона" name="phone" required>
                 </div>
                 <div class="popup-order__group group-field">
                   <div class="group-field__icon">
@@ -1135,7 +1135,7 @@
                       <use xlink:href="images/sprite.svg#email"></use>
                     </svg>
                   </div>
-                  <input class="group-field__input" placeholder="Электронная почта">
+                  <input class="group-field__input" type="email" placeholder="Электронная почта" name="mail" required>
                 </div>
                 <button class="popup-order__button button button_theme_burgundy button_size_lg">Отправить заявку</button>
               </form>
@@ -1656,8 +1656,12 @@
           </div>
         </div>
       </div>
+      <div class="popup-success" id="success">
+        <h2 class="h2 popup-sucess__title text-center text_color_burgundy">Успех!</h2>
+        <p class="p button button_size_sm button_theme_carmine-pink" data-fancybox-close>Форма успешно отправлена!</p>
+      </div>
       <div class="popup-order" id="order">
-        <form>
+        <form action="mail.php" method="POST">
           <div class="popup-order__title">Хотите обучаться у опытных практиков? ИДАБ принимает заявки на участие!</div>
           <p class="p popup-order__slogan">Заполните форму и мы свяжемся с вами для уточнения деталей</p>
           <div class="popup-order__group group-field">
@@ -1666,7 +1670,7 @@
                 <use xlink:href="images/sprite.svg#user"></use>
               </svg>
             </div>
-            <input class="group-field__input" placeholder="Ваше имя">
+            <input class="group-field__input" type="text" placeholder="Ваше имя" name="name" required>
           </div>
           <div class="popup-order__group group-field">
             <div class="group-field__icon">
@@ -1674,7 +1678,7 @@
                 <use xlink:href="images/sprite.svg#phone2"></use>
               </svg>
             </div>
-            <input class="group-field__input" placeholder="Номер телефона">
+            <input class="group-field__input" type="tel" placeholder="Номер телефона" name="phone" required>
           </div>
           <div class="popup-order__group group-field">
             <div class="group-field__icon">
@@ -1682,7 +1686,7 @@
                 <use xlink:href="images/sprite.svg#email"></use>
               </svg>
             </div>
-            <input class="group-field__input" placeholder="Электронная почта">
+            <input class="group-field__input" type="email" placeholder="Электронная почта" name="mail" required>
           </div>
           <p class="p">
             <button class="popup-order__button button button_theme_burgundy button_size_lg">Отправить заявку</button>
@@ -1695,6 +1699,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
-    <script src="js/main.js?v=1508918522068"></script>
+    <script src="js/main.js?v=1508925685090"></script>
   </head>
 </html>
