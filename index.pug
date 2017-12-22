@@ -15,8 +15,10 @@ html(lang="ru")
 				.container-fluid История ИДАБ
 			.container-fluid: .row
 				.col-xs-12.col-md-6.col-md-offset-1.col-md-push-5
-					.video-wrap: iframe.video-wrap__container(width="560" height="315" src="https://www.youtube.com/embed/XuoNzzWXvPY" frameborder="0" allowfullscreen)
-						p is not visible, most likely your browser does not support HTML5 video
+					.video-wrap: .video-wrap__container
+						a.card-video(href="https://www.youtube.com/embed/XuoNzzWXvPY" data-fancybox)
+							img.card-video__pr(src="https://img.youtube.com/vi/XuoNzzWXvPY/0.jpg" alt="Видео: История ИДАБ")
+							.card-video__button: svg.svg(width="68" height="48"): use(xlink:href="images/sprite.svg#youtube-play")
 				.col-xs-12.col-md-5.col-md-pull-7
 					.section-history__desc
 						p.p За 15 лет ИДАБ стал современной и самостоятельной бизнес-школой для подготовки лидеров, способных решать проблемы 21 века. Наш опыт и результаты работы высоко оценены российским и международным бизнесами, а также международным профессиональным сообществом. ИДАБ уверенно занимает лидирующие позиции в независимых рейтингах бизнес-школ России.
@@ -365,25 +367,27 @@ html(lang="ru")
 		section.section-video: .container-fluid: .slider-video
 			.slider-video__container
 				-
-					var videos = [{
-						i: 1,
-						href: 'https://www.youtube.com/embed/679-5_eHkMI?autoplay=1&rel=0'
-					},{
-						i: 2,
-						href: 'https://www.youtube.com/embed/XuoNzzWXvPY?autoplay=1&rel=0'
-					},{
-						i: 3,
-						href: 'https://www.youtube.com/embed/Vxn-BsswxlA?autoplay=1&rel=0'
-					},{
-						i: 4,
-						href: 'https://www.youtube.com/embed/-zdzF9QOkwE?autoplay=1&rel=0'
-					},{
-						i: 5,
-						href: 'https://www.youtube.com/embed/rXSHqes1VCI?autoplay=1&rel=0'
-					},];
-				each video in videos
-					.slider-video__slide: a.card-video(href=video.href data-fancybox="video")
-						img.card-video__pr(src="images/video/" + video.i + ".png", alt="" width="1120" height="630")
+					var videos = ['679-5_eHkMI', 'XuoNzzWXvPY', 'Vxn-BsswxlA', '-zdzF9QOkwE', 'rXSHqes1VCI']
+					// [{
+					// 	i: 1,
+					// 	href: 'https://www.youtube.com/embed/679-5_eHkMI?autoplay=1&rel=0'
+					// },{
+					// 	i: 2,
+					// 	href: 'https://www.youtube.com/embed/XuoNzzWXvPY?autoplay=1&rel=0'
+					// },{
+					// 	i: 3,
+					// 	href: 'https://www.youtube.com/embed/Vxn-BsswxlA?autoplay=1&rel=0'
+					// },{
+					// 	i: 4,
+					// 	href: 'https://www.youtube.com/embed/-zdzF9QOkwE?autoplay=1&rel=0'
+					// },{
+					// 	i: 5,
+					// 	href: 'https://www.youtube.com/embed/rXSHqes1VCI?autoplay=1&rel=0'
+					// },];
+				each hash in videos
+					.slider-video__slide: a.card-video(href="https://www.youtube.com/embed/" + hash  data-fancybox="video")
+						img.card-video__pr(src="https://img.youtube.com/vi/" + hash + "/0.jpg", alt="" width="1120" height="630")
+						.card-video__button: svg.svg(width="68" height="48"): use(xlink:href="images/sprite.svg#youtube-play")
 			.slider-video__arrows
 					button.slider-video__arrow_prev.slider-video__arrow(): svg.svg.slider-video__arrow-icon(width="28" height="14"): use(xlink:href="images/sprite.svg#prev")
 					.slider-video__arrow-separator: svg.svg(width="31" height="49"): use(xlink:href="images/sprite.svg#slider-separator")

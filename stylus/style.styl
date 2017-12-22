@@ -734,9 +734,27 @@ html {
 }
 
 .card-video {
+	display block
+	position relative
+	color rgba(21, 21, 21, 0.8)
+	
+	&:hover {
+		color red
+	}
+	
 	&__pr {
 		width 100%
 		height auto
+	}
+
+	&__button {
+		position absolute
+		top 50%
+		left 50%
+		fill currentColor
+		margin-left -34px
+		margin-top -24px
+		transition color .25s cubic-bezier(0.0,0.0,0.2,1)
 	}
 }
 
