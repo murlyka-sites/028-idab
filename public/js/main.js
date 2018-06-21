@@ -17,23 +17,27 @@ $(document).ready(function(){
 
 	// $.fancybox.open({src: "#course-1"})
 
-	$(".slider-video__container").slick({		
-		slidesToShow: 2,
-		prevArrow: $(".slider-video__arrow_prev"),
-		nextArrow: $(".slider-video__arrow_next"),
-		responsive: [{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1
+	new Swiper('.slider-video__container', {
+		speed: 400,
+		slidesPerView: 2,
+		navigation: {
+			prevEl: '.slider-video__arrow_prev',
+			nextEl: '.slider-video__arrow_next'
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 1
 			}
-		}]
-	});
+		}
 
-	$(".slider-exp__container").slick({
-		prevArrow: $(".slider-exp__arrow_prev"),
-		nextArrow: $(".slider-exp__arrow_next"),
-		// fade: true,
-		infinite: false
+	});
+	new Swiper('.slider-exp__container', {
+		speed: 400,
+		autoHeight: true,
+		navigation: {
+			prevEl: '.slider-exp__arrow_prev',
+			nextEl: '.slider-exp__arrow_next'
+		}
 	});
 
 	$(".nav-top__link").click(function() {

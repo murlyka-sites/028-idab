@@ -343,8 +343,8 @@ html(lang="ru")
 					button.slider-exp__arrow_prev.slider-exp__arrow(): svg.svg.slider-exp__arrow-icon(width="28" height="14"): use(xlink:href="images/sprite.svg#prev")
 					.slider-exp__arrow-separator: svg.svg(width="31" height="49"): use(xlink:href="images/sprite.svg#slider-separator")
 					button.slider-exp__arrow_next.slider-exp__arrow(): svg.svg.slider-exp__arrow-icon(width="28" height="14"): use(xlink:href="images/sprite.svg#next")
-				.slider-exp__container: each exp in exps
-					.slider-exp__slide: .section-exp__card.card-exp.row
+				.swiper-container.slider-exp__container: .swiper-wrapper: each exp in exps
+					.swiper-slide.slider-exp__slide: .section-exp__card.card-exp.row
 						.col-xs-12.col-sm-3.col-md-5: img.card-exp__pr(src="images/exp/" + exp.i + ".jpg" width="532" height="686")
 						.col-xs-12.col-sm-9.col-md-6
 							.card-exp__title «#{exp.special}»
@@ -365,7 +365,7 @@ html(lang="ru")
 
 								//- p.p Не следует, однако забывать, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Задача организации, в особенности же рамки и место обучения кадров позволяет выполнять важные задания по разработке модели развития.	
 		section.section-video: .container-fluid: .slider-video
-			.slider-video__container
+			.swiper-container.slider-video__container: .swiper-wrapper
 				-
 					var videos = ['679-5_eHkMI', 'XuoNzzWXvPY', 'Vxn-BsswxlA', '-zdzF9QOkwE', 'rXSHqes1VCI']
 					// [{
@@ -385,7 +385,7 @@ html(lang="ru")
 					// 	href: 'https://www.youtube.com/embed/rXSHqes1VCI?autoplay=1&rel=0'
 					// },];
 				each hash in videos
-					.slider-video__slide: a.card-video(href="https://www.youtube.com/embed/" + hash  data-fancybox="video")
+					.swiper-slide.slider-video__slide: a.card-video(href="https://www.youtube.com/embed/" + hash  data-fancybox="video")
 						img.card-video__pr(src="https://img.youtube.com/vi/" + hash + "/0.jpg", alt="" width="1120" height="630")
 						.card-video__button: svg.svg(width="68" height="48"): use(xlink:href="images/sprite.svg#youtube-play")
 			.slider-video__arrows
