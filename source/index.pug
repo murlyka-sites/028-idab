@@ -11,8 +11,8 @@ html(lang="ru")
 				p.p.section-main__slogan Учись у практиков, вкладывай в будущую карьеру и расширяй кругозор в Институте делового администрирования и бизнеса
 				a.section-main__button.button.button_size_lg.button_theme_burgundy(href="#order" data-fancybox) УЗНАТЬ БОЛЬШЕ
 		section.section-history#section-about
-			h2.h2.h2_border_left.section-history__title
-				.container-fluid История ИДАБ
+			.h2_border_left.section-history__title
+				.container-fluid: h2.h2 История ИДАБ
 			.container-fluid: .row
 				.col-xs-12.col-md-6.col-md-offset-1.col-md-push-5
 					.card-video(data-youtube-id="XuoNzzWXvPY" data-ratio="16:9")
@@ -21,8 +21,8 @@ html(lang="ru")
 						p.p За 15 лет ИДАБ стал современной и самостоятельной бизнес-школой для подготовки лидеров, способных решать проблемы 21 века. Наш опыт и результаты работы высоко оценены российским и международным бизнесами, а также международным профессиональным сообществом. ИДАБ уверенно занимает лидирующие позиции в независимых рейтингах бизнес-школ России.
 						a.section-history__button.button.button_theme_burgundy.button_size_lg(href="#about" data-fancybox) Узнать больше
 		section.section-course#section-course
-			h2.h2.h2_border_right.section-course__title
-				.container-fluid Наши программы
+			.h2_border_right.section-course__title
+				.container-fluid: h2.h2 Наши программы
 			.container-fluid
 				.section-course__card.card-course
 					.card-course__column.card-course__column_header
@@ -130,8 +130,8 @@ html(lang="ru")
 				a.section-course__button.button.button_theme_burgundy-bordered.button_size_lg(href="#order" data-fancybox) Мне нужна консультация
 		.bg-detail
 			section.section-detail
-				h2.h2.h2_border_right.section-detail__title 
-					.container-fluid Детали обучения
+				.h2_border_right.section-detail__title 
+					.container-fluid: h2.h2 Детали обучения
 				.container-fluid: .section-detail__container
 					.section-detail__column.section-detail__column_pr
 						img.section-detail__pr(src="images/detail.jpg", alt="" width="647" height="618")
@@ -156,101 +156,101 @@ html(lang="ru")
 							br
 							b Модульная:
 							|  7 модулей по 2 недели
-						p.p.sectino-detail__group
+						p.p.section-detail__group
 							b Форма обучения:
 							|  Очно-заочная (выходного дня, модульная)
-						p.p.sectino-detail__group
-							.inline-flex
-								.inline-flex__icon: svg(width="20" height="20"): use(xlink:href="images/sprite.svg#clock")
-								.inline-flex__text
+						p.p.section-detail__group
+							span.inline-flex
+								span.inline-flex__icon: svg(width="20" height="20"): use(xlink:href="images/sprite.svg#clock")
+								span.inline-flex__text
 									b Объем программы:
 									|  1900 академических часов, в т.ч. 100 ч. — иностранный язык
 							br
-							.inline-flex
-								.inline-flex__icon: svg(width="19" height="24"): use(xlink:href="images/sprite.svg#money")
-								.inline-flex__text
+							span.inline-flex
+								span.inline-flex__icon: svg(width="19" height="24"): use(xlink:href="images/sprite.svg#money")
+								span.inline-flex__text
 									b Стоимость обучения:
 									|  510 000 рублей
 				section.section-what
-				h2.h2.h2_border_left.section-what__title 
-					.container-fluid Почему мы?
-				.container-fluid
-					.row
-						.col-xs-12.col-sm-6.col-lg-5
-							.section-what__card.card-what
-								.card-what__column.card-what__column_pr
-									.card-what__pr: svg.svg(width="53" height="50"): use(xlink:href="images/sprite.svg#what-1")
-								.card-what__column.card-what__column_desc
-									.card-what__number 1
-									p.p.card-what__desc Команда преподавателей-практиков, имеющих уникальный для России и мира опыт
-						.col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
-							.section-what__card.card-what
-								.card-what__column.card-what__column_pr
-									.card-what__pr: svg.svg(width="50" height="50"): use(xlink:href="images/sprite.svg#what-2")
-								.card-what__column.card-what__column_desc
-									.card-what__number 2
-									p.p.card-what__desc Международная стажировка в лучших компаниях экономического сектора
-					.row
-						.col-xs-12.col-sm-6.col-lg-5
-							.section-what__card.card-what
-								.card-what__column.card-what__column_pr
-									.card-what__pr: svg.svg(width="39" height="52"): use(xlink:href="images/sprite.svg#what-3")
-								.card-what__column.card-what__column_desc
-									.card-what__number 3
-									p.p.card-what__desc Cертификат и диплом IFA, свидетельствующий о полученной категории
-						.col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
-							.section-what__card.card-what
-								.card-what__column.card-what__column_pr
-									.card-what__pr: svg.svg(width="51" height="51"): use(xlink:href="images/sprite.svg#what-4")
-								.card-what__column.card-what__column_desc
-									.card-what__number 4
-									p.p.card-what__desc Изучение делового английского языка — современные кейсы  и термины
-					.row
-						.col-xs-12.col-sm-6.col-lg-5
-							.section-what__card.card-what
-								.card-what__column.card-what__column_pr
-									.card-what__pr: svg.svg(width="38" height="52"): use(xlink:href="images/sprite.svg#what-5")
-								.card-what__column.card-what__column_desc
-									.card-what__number 5
-									p.p.card-what__desc Выгодное соотношение цены и качества — развивайтесь доступно
+					.h2_border_left.section-what__title 
+						.container-fluid: h2.h2 Почему мы?
+					.container-fluid
+						.row
+							.col-xs-12.col-sm-6.col-lg-5
+								.section-what__card.card-what
+									.card-what__column.card-what__column_pr
+										.card-what__pr: svg.svg(width="53" height="50"): use(xlink:href="images/sprite.svg#what-1")
+									.card-what__column.card-what__column_desc
+										.card-what__number 1
+										p.p.card-what__desc Команда преподавателей-практиков, имеющих уникальный для России и мира опыт
+							.col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
+								.section-what__card.card-what
+									.card-what__column.card-what__column_pr
+										.card-what__pr: svg.svg(width="50" height="50"): use(xlink:href="images/sprite.svg#what-2")
+									.card-what__column.card-what__column_desc
+										.card-what__number 2
+										p.p.card-what__desc Международная стажировка в лучших компаниях экономического сектора
+						.row
+							.col-xs-12.col-sm-6.col-lg-5
+								.section-what__card.card-what
+									.card-what__column.card-what__column_pr
+										.card-what__pr: svg.svg(width="39" height="52"): use(xlink:href="images/sprite.svg#what-3")
+									.card-what__column.card-what__column_desc
+										.card-what__number 3
+										p.p.card-what__desc Cертификат и диплом IFA, свидетельствующий о полученной категории
+							.col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
+								.section-what__card.card-what
+									.card-what__column.card-what__column_pr
+										.card-what__pr: svg.svg(width="51" height="51"): use(xlink:href="images/sprite.svg#what-4")
+									.card-what__column.card-what__column_desc
+										.card-what__number 4
+										p.p.card-what__desc Изучение делового английского языка — современные кейсы  и термины
+						.row
+							.col-xs-12.col-sm-6.col-lg-5
+								.section-what__card.card-what
+									.card-what__column.card-what__column_pr
+										.card-what__pr: svg.svg(width="38" height="52"): use(xlink:href="images/sprite.svg#what-5")
+									.card-what__column.card-what__column_desc
+										.card-what__number 5
+										p.p.card-what__desc Выгодное соотношение цены и качества — развивайтесь доступно
 
-						.col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
-							.section-what__card.card-what
-								.card-what__column.card-what__column_pr
-									.card-what__pr: svg.svg(width="50" height="50"): use(xlink:href="images/sprite.svg#what-6")
-								.card-what__column.card-what__column_desc
-									.card-what__number 6
-									p.p.card-what__desc Зарубежный учебный модуль входит в стоимость программы
+							.col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
+								.section-what__card.card-what
+									.card-what__column.card-what__column_pr
+										.card-what__pr: svg.svg(width="50" height="50"): use(xlink:href="images/sprite.svg#what-6")
+									.card-what__column.card-what__column_desc
+										.card-what__number 6
+										p.p.card-what__desc Зарубежный учебный модуль входит в стоимость программы
 
-					.row
-						.col-xs-12.col-sm-6.col-lg-5
-							.section-what__card.card-what
-								.card-what__column.card-what__column_pr
-									.card-what__pr: svg.svg(width="39" height="53"): use(xlink:href="images/sprite.svg#what-7")
-								.card-what__column.card-what__column_desc
-									.card-what__number 7
-									p.p.card-what__desc Получение второй специализации входит стоимость обучения
+						.row
+							.col-xs-12.col-sm-6.col-lg-5
+								.section-what__card.card-what
+									.card-what__column.card-what__column_pr
+										.card-what__pr: svg.svg(width="39" height="53"): use(xlink:href="images/sprite.svg#what-7")
+									.card-what__column.card-what__column_desc
+										.card-what__number 7
+										p.p.card-what__desc Получение второй специализации входит стоимость обучения
 
-						.col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
-							.section-what__card.card-what
-								.card-what__column.card-what__column_pr
-									.card-what__pr: svg.svg(width="44" height="54"): use(xlink:href="images/sprite.svg#what-8")
-								.card-what__column.card-what__column_desc
-									.card-what__number 8
-									p.p.card-what__desc Возможность получения профессиональной квалификации «Специалист Финансового Управления»
+							.col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
+								.section-what__card.card-what
+									.card-what__column.card-what__column_pr
+										.card-what__pr: svg.svg(width="44" height="54"): use(xlink:href="images/sprite.svg#what-8")
+									.card-what__column.card-what__column_desc
+										.card-what__number 8
+										p.p.card-what__desc Возможность получения профессиональной квалификации «Специалист Финансового Управления»
 
-					.row
-						.col-xs-12.col-sm-6.col-lg-5
-							.section-what__card.card-what
-								.card-what__column.card-what__column_pr
-									.card-what__pr: svg.svg(width="47" height="55"): use(xlink:href="images/sprite.svg#what-9")
-								.card-what__column.card-what__column_desc
-									.card-what__number 9
-									p.p.card-what__desc ИДАБ занимает 2 место в 2016 году в народном рейтинге российских бизнес школ, согласно «РБК+»
+						.row
+							.col-xs-12.col-sm-6.col-lg-5
+								.section-what__card.card-what
+									.card-what__column.card-what__column_pr
+										.card-what__pr: svg.svg(width="47" height="55"): use(xlink:href="images/sprite.svg#what-9")
+									.card-what__column.card-what__column_desc
+										.card-what__number 9
+										p.p.card-what__desc ИДАБ занимает 2 место в 2016 году в народном рейтинге российских бизнес школ, согласно «РБК+»
 
-						.col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
-							a.section-what__button.button.button_theme_burgundy.button_size_lg(href="http://idab.mba/eksklyuzivnye-vozmozhnosti" data-fancybox data-type="iframe") УЗНАТЬ БОЛЬШЕ
-		section.section-numbers: .container-fluid: .row
+							.col-xs-12.col-sm-6.col-lg-5.col-lg-offset-1
+								a.section-what__button.button.button_theme_burgundy.button_size_lg(href="http://idab.mba/eksklyuzivnye-vozmozhnosti" data-fancybox data-type="iframe") УЗНАТЬ БОЛЬШЕ
+		.section-numbers: .container-fluid: .row
 			.col-xs-12.col-sm-6.col-md-3
 				.section-numbers__card.card-numbers
 					.card-numbers__icon: svg.svg(width="88" height="101"): use(xlink:href="images/sprite.svg#numbers-1")
@@ -268,8 +268,8 @@ html(lang="ru")
 					.card-numbers__icon: svg.svg(width="101" height="101"): use(xlink:href="images/sprite.svg#numbers-4")
 					.card-numbers__desc отраслей  национальной экономики покорили выпускники
 		section.section-exp#section-reviews
-			h2.h2.h2_border_right.section-exp__title
-				.container-fluid Опыт слушателей
+			.h2_border_right.section-exp__title
+				.container-fluid: h2.h2 Опыт слушателей
 			.container-fluid: .slider-exp
 				-
 					var i = 0,
@@ -342,12 +342,11 @@ html(lang="ru")
 					button.slider-exp__arrow_next.slider-exp__arrow(): svg.svg.slider-exp__arrow-icon(width="28" height="14"): use(xlink:href="images/sprite.svg#next")
 				.swiper-container.slider-exp__container: .swiper-wrapper: each exp in exps
 					.swiper-slide.slider-exp__slide: .section-exp__card.card-exp.row
-						.col-xs-12.col-sm-3.col-md-5: img.card-exp__pr(src="images/exp/" + exp.i + ".jpg" width="532" height="686")
+						.col-xs-12.col-sm-3.col-md-5: img.card-exp__pr(src="images/exp/" + exp.i + ".jpg" width="532" height="686" alt="Фото: " + exp.title)
 						.col-xs-12.col-sm-9.col-md-6
 							.card-exp__title «#{exp.special}»
 							.card-exp__slogan
 								| #{exp.title},
-								//- |, 37 лет
 								br
 								| #{exp.slogan}
 							.card-exp__social.nav-social-exp
@@ -358,41 +357,19 @@ html(lang="ru")
 									li.nav-social-exp__item: a.nav-social-exp__link(href="#"): svg.svg.nav-social-exp__icon(width="23" height="23"): use(xlink:href="images/sprite.svg#square-vk")
 							.card-exp__desc
 								p.p #{exp.desc}
-								//- p.p Разнообразный и богатый опыт консультация с широким активом в значительной степени обуславливает создание новых предложений. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности способствует подготовки и реализации соответствующий условий активизации.
-
-								//- p.p Не следует, однако забывать, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Задача организации, в особенности же рамки и место обучения кадров позволяет выполнять важные задания по разработке модели развития.	
-		section.section-video: .container-fluid: .slider-video
+		.section-video: .container-fluid: .slider-video
 			.swiper-container.slider-video__container: .swiper-wrapper
 				-
 					var videos = ['679-5_eHkMI', 'XuoNzzWXvPY', 'Vxn-BsswxlA', '-zdzF9QOkwE', 'rXSHqes1VCI']
-					// [{
-					// 	i: 1,
-					// 	href: 'https://www.youtube.com/embed/679-5_eHkMI?autoplay=1&rel=0'
-					// },{
-					// 	i: 2,
-					// 	href: 'https://www.youtube.com/embed/XuoNzzWXvPY?autoplay=1&rel=0'
-					// },{
-					// 	i: 3,
-					// 	href: 'https://www.youtube.com/embed/Vxn-BsswxlA?autoplay=1&rel=0'
-					// },{
-					// 	i: 4,
-					// 	href: 'https://www.youtube.com/embed/-zdzF9QOkwE?autoplay=1&rel=0'
-					// },{
-					// 	i: 5,
-					// 	href: 'https://www.youtube.com/embed/rXSHqes1VCI?autoplay=1&rel=0'
-					// },];
 				each hash in videos
 					.swiper-slide.slider-video__slide: .card-video(data-youtube-id=hash data-ratio="16:9")
-					//- a.card-video(href="https://www.youtube.com/embed/" + hash  data-fancybox="video")
-						//- img.card-video__pr(src="https://img.youtube.com/vi/" + hash + "/0.jpg", alt="" width="1120" height="630")
-						//- .card-video__button: svg.svg(width="68" height="48"): use(xlink:href="images/sprite.svg#youtube-play")
 			.slider-video__arrows
 					button.slider-video__arrow_prev.slider-video__arrow(): svg.svg.slider-video__arrow-icon(width="28" height="14"): use(xlink:href="images/sprite.svg#prev")
 					.slider-video__arrow-separator: svg.svg(width="31" height="49"): use(xlink:href="images/sprite.svg#slider-separator")
 					button.slider-video__arrow_next.slider-video__arrow(): svg.svg.slider-video__arrow-icon(width="28" height="14"): use(xlink:href="images/sprite.svg#next")
 		section.section-cert
-			h2.h2.h2_border_left.section-cert__title
-				.container-fluid Cертификаты после обучения
+			.h2_border_left.section-cert__title
+				.container-fluid: h2.h2 Cертификаты после обучения
 			.container-fluid: .row
 				.col-xs-12.col-sm-4
 					.section-cert__card: .card-cert
@@ -412,7 +389,7 @@ html(lang="ru")
 						a.card-cert__wrap(href="images/cert/full/cert-3.jpg" data-fancybox="cert"):  img.card-cert__pr(src="images/cert/cert-3.jpg" width="310" height="220" alt="Сертификат")
 						.card-cert__desc Сертификат / Диплом Института финансовых аналитиков (IFA, Великобритания)
 		section.section-teacher#section-teacher
-			h2.h2.h2_border_right.section-teacher__title: .container-fluid Наши преподаватели
+			.h2_border_right.section-teacher__title: .container-fluid: h2.h2 Наши преподаватели
 			.container-fluid: .row: .section-teacher__container
 				-
 					var i = 0,
@@ -505,69 +482,6 @@ html(lang="ru")
 						.card-teacher__text
 							.card-teacher__title #{teacher.title}
 							.card-teacher__desc #{teacher.slogan}
-			//- 
-				.section-teacher__card: .card-teacher
-					.card-teacher__wrap
-						.card-teacher__inner
-							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
-						img.card-teacher__pr(src="images/teacher-2.jpg" width="308" height="291" alt="teacher")
-					.card-teacher__text
-						.card-teacher__title Анна Денисова
-						.card-teacher__desc Директор Института делового администрирования и бизнеса
-		
-				.section-teacher__card: .card-teacher
-					.card-teacher__wrap
-						.card-teacher__inner
-							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
-						img.card-teacher__pr(src="images/teacher-3.jpg" width="308" height="291" alt="teacher")
-					.card-teacher__text
-						.card-teacher__title Завадский Владислав
-						.card-teacher__desc Руководитель авторской программы MBA «Управление продажами»
-		
-				.section-teacher__card: .card-teacher
-					.card-teacher__wrap
-						.card-teacher__inner
-							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
-						img.card-teacher__pr(src="images/teacher-4.jpg" width="308" height="291" alt="teacher")
-					.card-teacher__text
-						.card-teacher__title Финкельштейн Григорий
-						.card-teacher__desc Разработчик бизнес-кейсов по программам МВА
-
-				.section-teacher__card: .card-teacher
-					.card-teacher__wrap
-						.card-teacher__inner
-							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
-						img.card-teacher__pr(src="images/teacher-5.jpg" width="308" height="291" alt="teacher")
-					.card-teacher__text
-						.card-teacher__title Иванов Андрей
-						.card-teacher__desc Бизнес-тренер по курсу: «Investor Relations: повышение капитализации компании, работа на рынке капитала».
-	
-				.section-teacher__card: .card-teacher
-					.card-teacher__wrap
-						.card-teacher__inner
-							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
-						img.card-teacher__pr(src="images/teacher-6.jpg" width="308" height="291" alt="teacher")
-					.card-teacher__text
-						.card-teacher__title Лихачева Ольга
-						.card-teacher__desc Преподаватель по курсам «Финансовый менеджмент», «Разработка финансовых политик» и др.
-
-				.section-teacher__card: .card-teacher
-					.card-teacher__wrap
-						.card-teacher__inner
-							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
-						img.card-teacher__pr(src="images/teacher-7.jpg" width="308" height="291" alt="teacher")
-					.card-teacher__text
-						.card-teacher__title Марич Игорь
-						.card-teacher__desc Учредитель и руководитель дискуссионного клуба ИДАБ «Инвест-менеджмент»
-	
-				.section-teacher__card: .card-teacher
-					.card-teacher__wrap
-						.card-teacher__inner
-							a.button.button_theme_white-border.button_size_xs.card-teacher__button(href="#") Смотреть резюме
-						img.card-teacher__pr(src="images/teacher-8.jpg" width="308" height="291" alt="teacher")
-					.card-teacher__text
-						.card-teacher__title Шаврин Илья
-						.card-teacher__desc Бизнес-тренер по курсу: «Техники сложных переговоров»
 		section.section-order#section-order
 			.container-fluid: .row
 				.col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-0.col-lg-5
@@ -637,5 +551,3 @@ html(lang="ru")
 		include pug/foo
 		include pug/popup
 		include pug/scripts
-		//- script(src="node_modules/pixel-glass/script.js")
-		//- link(rel="stylesheet", href="node_modules/pixel-glass/styles.css")
