@@ -1,21 +1,12 @@
 $(document).ready(function(){
 	svg4everybody();
 
+	$('.card-video').lazyYT('AIzaSyCO3kDE-UL6QOlRIXlmf-ix2tT5ddo___s')
+
 	$("[data-fancybox]").fancybox({
 		 autoFocus : false,
 		 scrolling : 'auto'
 	});
-
-	$("video").click(function() {
-		var $video = $(this).get(0);
-		if($video.paused) {
-			$video.play();
-		} else {
-			$video.pause();
-		}
-	});
-
-	// $.fancybox.open({src: "#course-1"})
 
 	new Swiper('.slider-video__container', {
 		speed: 400,
@@ -43,9 +34,7 @@ $(document).ready(function(){
 	$(".nav-top__link").click(function() {
 		offset = 0;
 
-		// if($(window).width() >= 768) {
 		offset = $(".section-header").height();
-		// }
 
 		$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - offset }, 1000);
 		e.preventDefault();
